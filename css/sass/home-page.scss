@@ -1,0 +1,61 @@
+.home {
+  .hero {
+    background-image: url('../images/bg.jpg'), linear-gradient(to right, #807363 0%, #251d16 50%, #3f302b 75%, #100b09 100%);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 96vh;
+    width:100%;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+      font-size: 6em;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      // background: black;
+      padding: 10px;
+      font-weight: bold;
+      position:relative;
+      height: 450px;
+      width: 800px;
+
+      &--furniture,
+      &--with,
+      &--attitude {
+        position:absolute;
+        background: black;
+        padding: 12px;
+      }
+
+      &--furniture {
+        top:0;
+        left:30%;
+        display: block;
+        transform: rotate(-5deg);
+      }
+
+      &--attitude {
+        top:45%;
+        left:30%;
+        display: block;
+        transform: scale(1.3);
+        text-align: center;
+        z-index:5;
+      }
+
+      &--with {
+        top: 20%;
+        left: 50%;
+        display: block;
+        transform: rotate(-10deg) scale(0.6);
+        text-align: center;
+        background: yellow;
+        color: black;
+        z-index:10;
+      }
+
+    }
+  }
+}
