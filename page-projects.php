@@ -8,7 +8,7 @@
 <div class="pages-stack">
 
 	<div class="page" id="<?php the_title(); ?>">
-		<div class="row animate center-xs" data-emergence="hidden">
+		<div class="row animate" data-emergence="hidden">
 			<?php // Display blog posts on any page @ http://m0n.co/l
 			$temp = $wp_query; $wp_query= null;
 			$wp_query = new WP_Query(); $wp_query->query('showposts=10' . '&paged='.$paged);
