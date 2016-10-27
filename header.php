@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="js">
 
 <head>
 	<meta charset="utf-8">
@@ -9,7 +9,7 @@
 	<meta name="author" content="">
 
 	<title>
-		<?php wp_title( '|', true, 'right' ); ?>
+		<?php wp_title( '-', true, 'right' ); ?>
 	</title>
 
 	<?php wp_head();?>
@@ -17,19 +17,16 @@
 
 <body>
 
-	<div class="blog-masthead">
-		<div class="container">
-			<nav class="blog-nav">
-				<?php wp_list_pages( '&title_li='); ?>
-			</nav>
-		</div>
-	</div>
 
-	<div class="container">
 
-		<div class="blog-header">
-			<h1 class="blog-title"><a href="<?php bloginfo('wpurl');?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
-			<p class="lead blog-description">
-				<?php echo get_bloginfo( 'description' ); ?>
-			</p>
-		</div>
+	  <div id="header" class="header">
+			  <button class="menu-button"><span>Menu</span></button>
+	      <h5 style="margin:0;">
+					<a class="logo" href="<?php bloginfo('url'); ?>"> <?php bloginfo('name'); ?> </a>
+				</h5 style="display:inline-block; margin:0;">
+				<h3 style="margin:0; color:#ffcc00"> - <?php bloginfo('description'); ?> </h3>
+	  </div>
+
+
+
+<?php get_template_part(navigation); ?>

@@ -1,12 +1,22 @@
-    </div> <!-- /.container -->
 
-		<footer class="blog-footer">
-      <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
-    </footer>
+		<!-- <footer style="    width: 100%;
+    height: 54px;
+    display: flex;
+		justify-content:center;
+		align-items: center;
+    z-index: 2000;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background: black;">
 
-<?php wp_footer(); ?> 
+      <div class="row">
+        <div class="col-lg-12">
+						<h3>Čia galėtų būti jūsų reklama</h3>
+        </div>
+      </div>
+    </footer> -->
+
+   <?php wp_footer(); ?>
   </body>
 </html>

@@ -7,15 +7,6 @@
         	</div>
       </header>
     </div>
-
-
-    <div class="page" id="contact">
-        <header class="bp-header cf">
-            <span class="bp-header__title">Kontaktai</span>
-            <div class="info">
-              Telefonas
-            </div>
-        </header>
-    </div>
+    <?php get_template_part(contact); ?>
 </div>
 <!-- /.blog-post -->
