@@ -5,7 +5,7 @@
           +370 60507073
 
           <div class="row">
-            <form class="form col-lg-6" required>
+            <form class="form col-lg-8 col-md-8 col-sm-10 col-xs-12" required>
               <fieldset>
                 <legend>Personal info</legend>
 
@@ -51,7 +51,7 @@
                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <h3>Komentarai:</h3>
                   </div>
-                  <div class="input-group col-lg-8 col-md-6 col-sm-12 col-xs-12">
+                  <div class="input-group col-lg-10 col-md-10 col-sm-12 col-xs-12">
                     <textarea class="" noresize></textarea>
                   </div>
 
