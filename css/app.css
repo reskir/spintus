@@ -453,7 +453,6 @@ html.js,
   max-height: 80%; }
 
 .header {
-  position: absolute;
   display: flex;
   align-items: center;
   top: 0;
