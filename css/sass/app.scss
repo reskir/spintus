@@ -1,4 +1,5 @@
 @import 'colors.scss';
+@import 'variables.scss';
 
 
 @import 'global.scss';
@@ -6,8 +7,11 @@
 
 @import 'navigation.scss';
 
+
+@import "home-page.scss";
 @import 'about-page.scss';
 @import 'project-page.scss';
+@import "contact-page.scss";
 
 @import "menu.scss";
 @import "stack-nav.scss";

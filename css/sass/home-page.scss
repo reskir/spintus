@@ -1,0 +1,77 @@
+.home {
+
+  .bp-header__title {
+    letter-spacing: 2px;
+  }
+
+  .hero {
+
+    background:     linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4)
+    ), url('../images/hero-image.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 96vh;
+    width:100%;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+      font-size: 5em;
+      color: white;
+      font-family: $headings-fonts, sans-serif;
+      //background: yellow;
+      padding: 10px;
+      font-weight: 100;
+      position: relative;
+      // height: 450px;
+      // width: 800px;
+
+      &--default {
+        padding: $base-size-unit * 4;
+        color:#fff;
+        text-align: left;
+        // text-shadow: 1px 5px 6px #cdcdcd;
+      }
+
+      &--furniture,
+      &--with,
+      &--attitude {
+        position:absolute;
+        background: black;
+        padding: 12px;
+      }
+
+      &--furniture {
+        top:15%;
+        left:30%;
+        display: block;
+        transform: rotate(-5deg);
+      }
+
+      &--attitude {
+        top:45%;
+        left:30%;
+        display: block;
+        transform: scale(1);
+        text-align: center;
+        z-index:5;
+      }
+
+      &--with {
+        top: 25%;
+        left: 60%;
+        display: block;
+        transform: rotate(-10deg) scale(0.6);
+        text-align: center;
+        background: yellow;
+        color: black;
+        z-index:10;
+      }
+
+    }
+  }
+}

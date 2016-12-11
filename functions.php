@@ -1,5 +1,4 @@
 <?php
-
 // Add scripts and stylesheets
 function css_scripts() {
 	wp_enqueue_style( 'app-css', get_template_directory_uri() . '/css/app.css', array(), '0.0.1' );
