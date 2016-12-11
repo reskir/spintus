@@ -1,7 +1,5 @@
 html.js,
 .js body {
-	overflow: hidden;
-	height: 100vh;
 }
 
 
@@ -15,6 +13,7 @@ html.js,
 	perspective: 1200px;
 	-webkit-perspective-origin: 50% -50%;
 	perspective-origin: 50% -50%;
+	overflow: hidden;
 }
 
 .js .page {
