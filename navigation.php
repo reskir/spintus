@@ -11,7 +11,7 @@
     'before'    => '<span class="screen-reader-text">',
     'after'     => '</span>',
     'theme_location' => 'primary',
-    'items_wrap' => '%3$s'
+    'items_wrap' => '<div id="%1$s" class="%2$s">%3$s</div>'
   );
   wp_nav_menu( $my_menu );
 

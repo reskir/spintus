@@ -62,6 +62,10 @@
     transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
     -webkit-transform: translate3d(0, 150px, 0);
     transform: translate3d(0, 150px, 0);
+
+    .contact {
+      font-size: calc(2vw + 3px);
+    }
 }
 
 .js .pages-nav--open {
@@ -78,6 +82,11 @@
 .js .page_item {
     padding: 1em;
     width: 33%;
+    &.current_page_item {
+      .item {
+        color: #999;
+      }
+    }
 }
 
 .pages-nav .page_item--social {
@@ -100,7 +109,7 @@
 }
 
 a.item {
-    font-size: 2em;
+    font-size: calc(2vw + 3px);
     font-weight: bold;
     position: relative;
     letter-spacing: 1px;
@@ -126,10 +135,10 @@ a.item:hover {
 
     .pages-nav {
         ul {
-            display: block;
+            // display: block;
 
             li.page_item {
-                width: 100%;
+                // width: 100%;
             }
         }
     }
