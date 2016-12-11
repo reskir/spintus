@@ -24,7 +24,6 @@
 	      <h5 style="margin:0;">
 					<a class="logo" href="<?php bloginfo('url'); ?>"> <?php bloginfo('name'); ?> </a>
 				</h5 style="display:inline-block; margin:0;">
-				<h3 style="margin:0; color:#ffcc00"> - <?php bloginfo('description'); ?> </h3>
 	  </div>
 
 

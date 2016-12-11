@@ -230,27 +230,28 @@ a.item:hover {
   letter-spacing: 2px; }
 
 .home .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url("../images/hero-image.jpg");
+  background: url("../images/hero-image.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   height: 96vh;
   width: 100%;
   background-size: cover;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  justify-content: flex-start;
+  align-items: flex-end; }
   .home .hero__text {
-    font-size: 5em;
-    color: white;
-    font-family: "Work Sans", sans-serif, sans-serif;
+    font-size: calc(3vw + 10px);
     padding: 10px;
     font-weight: 100;
     position: relative; }
     .home .hero__text--default {
       padding: 12px;
-      color: #fff;
-      text-align: left; }
-    .home .hero__text--furniture, .home .hero__text--with, .home .hero__text--attitude {
+      color: #a4a5ba;
+      text-align: left;
+      text-transform: uppercase; }
+      .home .hero__text--default .red {
+        color: #46eeb8; }
+    .home .hero__text--attitude, .home .hero__text--furniture, .home .hero__text--with {
       position: absolute;
       background: black;
       padding: 12px; }
@@ -295,40 +296,32 @@ a.item:hover {
 .project .bp-header__title {
   letter-spacing: 2px; }
 
-.project_list a.header__link {
-  color: white;
-  width: 100%;
-  display: block;
-  letter-spacing: 2px;
-  /* Required for text-overflow */
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis; }
-  .project_list a.header__link:hover {
-    color: #5c5edc; }
-
-.project_list .thumbnail {
-  transition: transform 0.5s ease;
-  height: 300px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; }
-  .project_list .thumbnail:hover {
-    transform: scale(0.95); }
-
-.project_list p {
-  padding: 12px 0; }
-
-.project_list .link {
-  font-size: 14px; }
+.project_list {
+  position: relative; }
+  .project_list a.header__link {
+    color: white;
+    width: 100%;
+    display: block;
+    position: absolute; }
+    .project_list a.header__link:hover {
+      color: #5c5edc;
+      text-decoration: underline; }
+  .project_list .thumbnail {
+    transition: transform 0.5s ease;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+  .project_list p {
+    padding: 12px 0; }
+  .project_list .link {
+    font-size: 14px; }
 
 .contact .form {
-  margin-top: 32px;
   padding: 12px; }
 
 .contact fieldset {
-  border: 0;
-  padding: 12px; }
+  border: 0; }
 
 .contact textarea {
   width: 100%;
@@ -346,7 +339,7 @@ a.item:hover {
 .contact .input-group {
   display: flex;
   position: relative;
-  margin: 12px 0; }
+  margin: 24px 0; }
   .contact .input-group .input {
     padding: 9px;
     padding-top: 32px;
@@ -369,9 +362,9 @@ a.item:hover {
       position: relative;
       padding-left: 24px;
       line-height: 16px;
+      font-size: 18px;
       cursor: pointer;
       display: flex;
-      align-items: center;
       user-select: none; }
     .contact .input-group .input--checkbox {
       position: absolute;

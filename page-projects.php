@@ -16,9 +16,9 @@
 
 				<div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
 					<header class="bp-header cf project_list" >
-							<h1 class="bp-header__title" > <a class="header__link" href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h1>
-							<span>  <div class="smaller"> Autorius: 	<?php the_author(); ?>   <br />  Data:  <?php the_date(); ?></div> </span>
+							<!-- <span>  <div class="smaller"> Autorius: 	<?php the_author(); ?>   <br />  Data:  <?php the_date(); ?></div> </span> -->
 							<div class="info row top-xs">
+								<h1 class="bp-header__title" > <a class="header__link" href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h1>
 								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 									<a href="<?php the_permalink(); ?>">
 										<div class="thumbnail col-lg-12" style="background-image: url('<?php the_post_thumbnail_url() ?>');">
