@@ -1,7 +1,7 @@
 emergence.init({container: null,
         throttle: 250,
         reset: true,
-        handheld: true,
+        handheld: false,
         elemCushion: 0.15,
         offsetTop: 0,
         offsetRight: 0,

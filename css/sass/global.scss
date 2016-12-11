@@ -1,8 +1,21 @@
-@import url( 'https://fonts.googleapis.com/css?family=Droid+Sans|Montserrat');
+// @import url( 'https://fonts.googleapis.com/css?family=Droid+Sans|Montserrat');
+@import url( 'https://fonts.googleapis.com/css?family=Roboto');
+
+@font-face {
+    font-family: NeutraDisplay-bold;
+    font-weight: 700;
+    src: url("../fonts/NeutraDisplayBold.woff") format("woff");
+}
+@font-face {
+    font-family: NeutraDisplay-Titling;
+    font-weight: 900;
+    src: url("../fonts/NeutraDisplay-Titling.woff") format("woff");
+}
 
 body {
-    font-family: 'Droid Sans', sans-serif;
+    font-family: $body-font, sans-serif;
     background: $body;
+    font-size: $base-font-size;
     color: $text-primary;
 }
 
@@ -11,19 +24,22 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-family: $headings-fonts, sans-serif;
+    font-weight: 700;
 }
 
 p {
     margin: 0;
-    font-size: 16px;
     line-height: 24px;
+}
+
+.smaller {
+  font-size: $base-small-font-size;
 }
 
 .line {
     height: 2px;
-    width: 0%;
+    width: 0;
     background-color: #5c5edc;
 }
 
@@ -41,4 +57,57 @@ p {
     border-radius: 0;
     background-color: #2a2b30;
     // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+.line {
+    height: 2px;
+    width: 0;
+    background-color: #5c5edc;
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: white;
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background-color: #2a2b30;
+    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+.btn {
+  text-shadow: 0 1px 3px rgba(36,180,126,.4);
+  letter-spacing: .025em;
+  cursor: pointer;
+  transition: all .15s ease;
+  font-size: 2em;
+
+  outline:none;
+  font-family: $headings-fonts, serif;
+  border:0;
+  padding: 12px;
+  border-radius: 4px;
+  color:white;
+
+
+  &:hover,
+  &:focus {
+    transform: translateY(-1px);
+    text-shadow: 0 7px 14px rgba(0,0,0,.1), 0 3px 6px rgba(0,0,0,.08);
+  }
+
+  &--primary {
+    background: #fff;
+  }
+
+  &--success {
+    background: #3ecf8e;
+  }
+
 }
