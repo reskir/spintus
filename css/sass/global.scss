@@ -49,28 +49,6 @@ p {
 //     // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 // }
 
-.line {
-    height: 2px;
-    width: 0;
-    background-color: #5c5edc;
-}
-
-::-webkit-scrollbar {
-    width: 16px;
-}
-
-::-webkit-scrollbar-track {
-    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    background-color: white;
-    border-radius: 0;
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 0;
-    background-color: #2a2b30;
-    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
-}
-
 .btn {
   text-shadow: 0 1px 3px rgba(36,180,126,.4);
   letter-spacing: .025em;
