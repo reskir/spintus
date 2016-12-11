@@ -1,15 +1,5 @@
 <?php
 
-
-RoutingWP\add_frontend_route('^([^/]+)/projektai', function($matches) {
-    return [
-        'post_type'      => $matches[1],
-        'posts_per_page' => 5,
-        'orderby'        => 'date',
-        'order'          => 'desc'
-    ];
-});
-
 // Add scripts and stylesheets
 function css_scripts() {
 	wp_enqueue_style( 'app-css', get_template_directory_uri() . '/css/app.css', array(), '0.0.1' );
@@ -114,4 +104,3 @@ function create_my_custom_post() {
 			)
 	));
 }
-add_action('init', 'create_my_project');
