@@ -1,20 +1,8 @@
-// @import url( 'https://fonts.googleapis.com/css?family=Droid+Sans|Montserrat');
-@import url( 'https://fonts.googleapis.com/css?family=Roboto');
-
-@font-face {
-    font-family: NeutraDisplay-bold;
-    font-weight: 700;
-    src: url("../fonts/NeutraDisplayBold.woff") format("woff");
-}
-@font-face {
-    font-family: NeutraDisplay-Titling;
-    font-weight: 900;
-    src: url("../fonts/NeutraDisplay-Titling.woff") format("woff");
-}
+@import url('https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans:400,700&subset=latin-ext');
 
 body {
 
-    font-family: $body-font, sans-serif;
+    font-family: $body-font;
     background: $body;
     font-size: $base-font-size;
     color: $text-primary;
@@ -26,7 +14,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: $headings-fonts, sans-serif;
+    font-family: $headings-fonts;
     font-weight: 700;
 }
 

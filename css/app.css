@@ -1,16 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
-@font-face {
-  font-family: NeutraDisplay-bold;
-  font-weight: 700;
-  src: url("../fonts/NeutraDisplayBold.woff") format("woff"); }
-
-@font-face {
-  font-family: NeutraDisplay-Titling;
-  font-weight: 900;
-  src: url("../fonts/NeutraDisplay-Titling.woff") format("woff"); }
-
+@import url("https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans:400,700&subset=latin-ext");
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Space Mono", monospace;
   background: #1d1e21;
   font-size: 16px;
   color: #cecece; }
@@ -20,7 +10,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: NeutraDisplay-Titling, sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 700; }
 
 p {
@@ -69,7 +59,7 @@ p {
   transition: all .15s ease;
   font-size: 2em;
   outline: none;
-  font-family: NeutraDisplay-Titling, serif;
+  font-family: "Work Sans", sans-serif, serif;
   border: 0;
   padding: 12px;
   border-radius: 4px;
@@ -112,7 +102,7 @@ p {
     transition: all .15s ease;
     font-size: 2em;
     outline: none;
-    font-family: NeutraDisplay-Titling, serif;
+    font-family: "Work Sans", sans-serif, serif;
     border: 0;
     padding: 12px;
     border-radius: 4px;
@@ -173,7 +163,7 @@ a.item {
   position: relative;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: NeutraDisplay-Titling, sans-serif; }
+  font-family: "Work Sans", sans-serif, sans-serif; }
 
 a.item:focus,
 a.item:hover {
@@ -271,7 +261,7 @@ a.item:hover {
   .home .hero__text {
     font-size: 5em;
     color: white;
-    font-family: NeutraDisplay-Titling, sans-serif;
+    font-family: "Work Sans", sans-serif, sans-serif;
     padding: 10px;
     font-weight: 100;
     position: relative; }
@@ -369,7 +359,7 @@ a.item:hover {
   resize: none;
   border-bottom: 2px solid #5c5edc;
   background: #414141;
-  font-family: "Roboto", sans-serif;
+  font-family: "Space Mono", monospace;
   font-size: 16px; }
 
 .contact .input-group {
@@ -383,7 +373,7 @@ a.item:hover {
     border: 0;
     background: #414141;
     color: white;
-    font-family: NeutraDisplay-Titling, sans-serif;
+    font-family: "Work Sans", sans-serif, sans-serif;
     transition: border 1s ease, background 0.4s ease;
     border-bottom: 2px solid #5c5edc;
     width: 100%; }
