@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="pages-stack">
+<div class="">
  <?php get_template_part(contact); ?>
  
   <div class="page" id="<?php the_title(); ?>">
