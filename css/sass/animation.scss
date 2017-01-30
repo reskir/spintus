@@ -1,12 +1,12 @@
 .animate {
-    transition: opacity 1.5s ease, transform 1s ease;
+    transition: opacity 0.8s ease, transform 1.2s ease;
     &[data-emergence="hidden"] {
-      transform: translateX(40px);
+      transform: translateY(80px);
       opacity:0;
     }
     &[data-emergence="visible"] {
       opacity:1;
-      transform: translateX(0px);
+      transform: translateY(0px);
     }
 }
 

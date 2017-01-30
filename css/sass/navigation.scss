@@ -77,8 +77,9 @@
 
 .js .page_item {
     &.current_page_item {
+       background: red;
       .item {
-        color: #999;
+        color: #fff;
       }
     }
 }
@@ -103,7 +104,7 @@
 }
 
 a.item {
-    font-size: 2em;
+    font-size: 1.2em;
     position: relative;
     letter-spacing: 1px;
     text-transform: uppercase;
