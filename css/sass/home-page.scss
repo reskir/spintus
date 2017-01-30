@@ -7,7 +7,7 @@
         background: url('../images/hero-image.jpg');
         background-repeat: no-repeat;
         background-position: center center;
-        height: 96vh;
+        height: calc(100vh - 91px);
         width: 100%;
         background-size: cover;
         display: flex;

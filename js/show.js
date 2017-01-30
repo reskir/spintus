@@ -49,10 +49,47 @@ page.addEventListener('scroll', function(e) {
 var header = document.querySelector(".header_fixed");
 var FIXED_HEADER_APPEARS = 200;
 
-document.addEventListener("scroll", function(e) {
-  if (window.scrollY >= FIXED_HEADER_APPEARS) {
+
+var last_known_scroll_position = 0;
+var scrolling = false;
+
+var handleScroll = function(evt){
+  if (!evt) evt = event;
+  if(event.deltaY === -100) {
+    console.log(event.deltaY);
     header.classList.remove("hide");
   } else {
     header.classList.add("hide");
   }
+};
+
+
+function doSomething(scroll_pos, evt) {
+  // do something with the scroll position
+    if (scroll_pos >= FIXED_HEADER_APPEARS) {
+      window.addEventListener('DOMMouseScroll', handleScroll,false); // for Firefox
+      window.addEventListener('mousewheel', handleScroll,false); // for everyone else
+    } else {
+      header.classList.add("hide");
+      window.removeEventListener('DOMMouseScroll', handleScroll,false); // for Firefox
+      window.removeEventListener('mousewheel', handleScroll,false); // for everyone else
+    }
+}
+
+window.addEventListener('scroll', function(e) {
+  last_known_scroll_position = window.scrollY;
+  if (!scrolling) {
+    window.requestAnimationFrame(function() {
+      doSomething(last_known_scroll_position);
+      scrolling = false;
+    });
+  }
+  scrolling = true;
 });
+// document.addEventListener("scroll", function(e) {
+//   if (window.scrollY >= FIXED_HEADER_APPEARS) {
+//     header.classList.remove("hide");
+//   } else {
+//     header.classList.add("hide");
+//   }
+// });
