@@ -20,11 +20,11 @@
 
 
 <div id="header" class="header">
-	<div class="row">
-		<h5 class="col-lg-3 col-md-12 col-sm-12 col-xs-12 center-lg center-xs center-md center-sm">
+	<div class="row middle-lg">
+		<div class="col-lg-3 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12 start-lg center-xs center-md center-sm">
 			<a class="logo" href="<?php bloginfo('url'); ?>"> <?php bloginfo('name'); ?> </a>
-		</h5 style="display:inline-block; margin:0;">
-		<nav class="col-lg-9 col-md-12 col-sm-12 col-xs-12 end-lg menu_container">
+		</div style="display:inline-block; margin:0;">
+		<nav class="col-lg-8 col-md-12 col-sm-12 col-xs-12 end-lg menu_container">
 			<?php
 			//Primary navigation menu.
 			$my_menu = array(
@@ -44,11 +44,11 @@
 </div>
 
 <div id="header" class="header header_fixed hide">
-	<div class="row">
-		<h5 class="col-lg-3 col-md-12 col-sm-12 col-xs-12 center-lg center-xs center-md center-sm">
+	<div class="row middle-lg">
+		<div class="col-lg-3 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12 start-lg center-xs center-md center-sm">
 			<a class="logo" href="<?php bloginfo('url'); ?>"> <?php bloginfo('name'); ?> </a>
-		</h5 style="display:inline-block; margin:0;">
-		<nav class="col-lg-9 col-md-12 col-sm-12 col-xs-12 end-lg menu_container">
+		</div style="display:inline-block; margin:0;">
+		<nav class="col-lg-8 col-md-12 col-sm-12 col-xs-12 end-lg menu_container">
 			<?php
 			//Primary navigation menu.
 			$my_menu = array(

@@ -12,7 +12,7 @@ h3,
 h4,
 h5 {
   font-family: "Work Sans", sans-serif;
-  font-weight: 700; }
+  font-weight: normal; }
 
 p {
   margin: 0;
@@ -25,6 +25,9 @@ p {
   height: 2px;
   width: 0;
   background-color: #5c5edc; }
+
+.center {
+  text-align: center; }
 
 .btn {
   text-shadow: 0 1px 3px rgba(36, 180, 126, 0.4);
@@ -132,7 +135,6 @@ ul {
 
 a.item {
   font-size: 2em;
-  font-weight: bold;
   position: relative;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -216,6 +218,9 @@ a.item:hover {
 .home .bp-header__title {
   letter-spacing: 2px; }
 
+.home_block {
+  margin: 0 0 15%; }
+
 .home .hero {
   background: url("../images/hero-image.jpg");
   background-repeat: no-repeat;
@@ -224,7 +229,7 @@ a.item:hover {
   width: 100%;
   background-size: cover;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: flex-end; }
   .home .hero__text {
     font-size: calc(3vw + 10px);
@@ -234,8 +239,9 @@ a.item:hover {
     .home .hero__text--default {
       padding: 12px;
       color: #a4a5ba;
-      text-align: left;
-      text-transform: uppercase; }
+      text-align: right;
+      text-transform: uppercase;
+      font-weight: normal; }
       .home .hero__text--default .red {
         color: #46eeb8; }
     .home .hero__text--attitude, .home .hero__text--furniture, .home .hero__text--with {
@@ -458,9 +464,8 @@ a.item:hover {
     cursor: pointer;
     border: none;
     outline: none;
-    font-size: 3em;
+    font-size: 2em;
     text-transform: uppercase;
-    font-weight: 900;
     color: white;
     transition: font-size 0.5s ease; }
     .header .logo:hover {
