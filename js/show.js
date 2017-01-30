@@ -45,3 +45,13 @@ page.addEventListener('scroll', function(e) {
     header.classList.remove('scrolled');
   }
 });
+
+var header = document.querySelector(".header")
+
+document.addEventListener("scroll", function(e) {
+  if (window.scrollY > 350) {
+    header.classList.add("active");
+  } else {
+    header.classList.remove("active");
+  }
+});

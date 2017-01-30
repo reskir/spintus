@@ -7,22 +7,17 @@ html.js,
 /* Pages stack */
 
 .js .pages-stack {
-	z-index: 100;
-	pointer-events: none;
-	-webkit-perspective: 1200px;
-	perspective: 1200px;
-	-webkit-perspective-origin: 50% -50%;
-	perspective-origin: 50% -50%;
-	overflow: hidden;
+	height: 100%;
+	width:100%;
+	margin-top: 81px;
 }
 
 .js .page {
 	position: relative;
-	z-index: 5;
 	overflow-y: auto;
 	overflow-x:hidden;
 	width: 100%;
-	height: calc(85vh + 55px);
+	height: 100%;
 	pointer-events: auto;
 	background: $page;
 	box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);

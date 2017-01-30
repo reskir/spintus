@@ -1,4 +1,4 @@
-<div class="pages-stack">
+<div class="main-content">
   <div class="page" id="<?php the_title(); ?>">
       <header class="bp-header cf animate" data-emergence="hidden">
           <h1 class="bp-header__title" ><?php the_title(); ?></h1>

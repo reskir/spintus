@@ -1,4 +1,4 @@
-<div class="pages-stack">
+<div class="main-content">
   <div class="page home" id="<?php the_title(); ?>">
 
       <div class="hero" >
@@ -7,14 +7,13 @@
           </div>
       </div>
 
-      <header class="bp-header cf">
+      <div class="bp-header cf">
 
          <div class="info main ">
           	<?php the_content(); ?>
          </div>
 
-      </header>
+      </div>
     </div>
-    <?php get_template_part(contact); ?>
 </div>
 <!-- /.blog-post -->

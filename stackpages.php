@@ -1,6 +1,6 @@
 
-  <div class="page" id="home">
-    <header class="bp-header cf">
+  <div class="" id="home">
+    <div class="bp-header cf">
       <?php
         $lastposts = get_posts( array(
             'posts_per_page' => 1
@@ -18,7 +18,7 @@
             wp_reset_postdata();
         }
       ?>
-    </header>
+    </div>
   </div>
 
 

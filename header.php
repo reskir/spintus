@@ -19,13 +19,11 @@
 
 
 
-	  <div id="header" class="header">
-			  <button class="menu-button"><span>Menu</span></button>
-	      <h5 style="margin:0;">
-					<a class="logo" href="<?php bloginfo('url'); ?>"> <?php bloginfo('name'); ?> </a>
-				</h5 style="display:inline-block; margin:0;">
-	  </div>
-
-
-
-<?php get_template_part(navigation); ?>
+<div id="header" class="header">
+	<div class="row">
+		<h5 class="col-lg-2 col-md-2 col-sm-12 col-xs-12 center-lg center-xs center-md center-sm">
+			<a class="logo" href="<?php bloginfo('url'); ?>"> <?php bloginfo('name'); ?> </a>
+		</h5 style="display:inline-block; margin:0;">
+		<?php get_template_part(navigation); ?>
+	</div>
+</div>

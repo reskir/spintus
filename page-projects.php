@@ -5,7 +5,7 @@
 ?>
 <?php get_header(); ?>
 
-<div class="pages-stack">
+<div class="main-content">
 
 	<div class="page" id="<?php the_title(); ?>">
 		<div class="row animate" data-emergence="hidden">
@@ -44,9 +44,6 @@
 			<?php wp_reset_postdata(); ?>
 		</div>
 	</div>
-
-
-	<?php get_template_part(contact); ?>
 
  </div>
 
