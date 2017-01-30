@@ -1,5 +1,5 @@
 .header {
-    position:fixed;
+    position:relative;
     top:0;
     left:0;
     width: 100%;
@@ -9,22 +9,30 @@
     border-bottom: 1px solid #323339;
     transition: all 0.5s ease;
 
-    &.scrolled {
-        box-shadow: 1px 1px 10px #000;
-    }
-
-    &.active {
-        box-shadow: 1px 1px 10px #000;
-        border-bottom: 0;
-        
-
+    &_fixed {
+        position:fixed;
+        opacity:1;
+        transform: rotate(0);
+        transition: transform 0.2s ease;
+        transform-origin: left;
+        box-shadow: 1px 1px 10px #222;
+        border-bottom: 1px solid $page;
         .logo {
-            font-size: 2em;
+            font-size: 2em !important;
         }
 
         a.item {
-            font-size: 1.5em;
+            font-size: 1.5em !important;
         }
+
+        &.hide {
+            transform: rotate(-2deg);
+            visibility:hidden;
+        }
+    }
+
+    &.scrolled {
+        box-shadow: 1px 1px 10px #000;
     }
 
     .logo {
@@ -37,7 +45,7 @@
         text-transform: uppercase;
         font-weight: 900;
         color: white;
-        transition: all 0.5s ease;
+        transition: font-size 0.5s ease;
 
         &:hover {
             color: white;

@@ -21,9 +21,48 @@
 
 <div id="header" class="header">
 	<div class="row">
-		<h5 class="col-lg-2 col-md-2 col-sm-12 col-xs-12 center-lg center-xs center-md center-sm">
+		<h5 class="col-lg-3 col-md-12 col-sm-12 col-xs-12 center-lg center-xs center-md center-sm">
 			<a class="logo" href="<?php bloginfo('url'); ?>"> <?php bloginfo('name'); ?> </a>
 		</h5 style="display:inline-block; margin:0;">
-		<?php get_template_part(navigation); ?>
+		<nav class="col-lg-9 col-md-12 col-sm-12 col-xs-12 end-lg menu_container">
+			<?php
+			//Primary navigation menu.
+			$my_menu = array(
+				'container' => '',
+				'menu_class' => '',
+				'depth'     => 0,
+				'before'    => '<span class="screen-reader-text">',
+				'after'     => '</span>',
+				'theme_location' => 'primary',
+				'items_wrap' => '<div id="%1$s" class="%2$s">%3$s</div>'
+			);
+			wp_nav_menu( $my_menu );
+
+			?>
+		</nav>
+	</div>
+</div>
+
+<div id="header" class="header header_fixed hide">
+	<div class="row">
+		<h5 class="col-lg-3 col-md-12 col-sm-12 col-xs-12 center-lg center-xs center-md center-sm">
+			<a class="logo" href="<?php bloginfo('url'); ?>"> <?php bloginfo('name'); ?> </a>
+		</h5 style="display:inline-block; margin:0;">
+		<nav class="col-lg-9 col-md-12 col-sm-12 col-xs-12 end-lg menu_container">
+			<?php
+			//Primary navigation menu.
+			$my_menu = array(
+				'container' => '',
+				'menu_class' => '',
+				'depth'     => 0,
+				'before'    => '<span class="screen-reader-text">',
+				'after'     => '</span>',
+				'theme_location' => 'primary',
+				'items_wrap' => '<div id="%1$s" class="%2$s">%3$s</div>'
+			);
+			wp_nav_menu( $my_menu );
+
+			?>
+		</nav>
 	</div>
 </div>

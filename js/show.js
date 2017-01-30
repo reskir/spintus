@@ -46,12 +46,13 @@ page.addEventListener('scroll', function(e) {
   }
 });
 
-var header = document.querySelector(".header")
+var header = document.querySelector(".header_fixed");
+var FIXED_HEADER_APPEARS = 200;
 
 document.addEventListener("scroll", function(e) {
-  if (window.scrollY > 350) {
-    header.classList.add("active");
+  if (window.scrollY >= FIXED_HEADER_APPEARS) {
+    header.classList.remove("hide");
   } else {
-    header.classList.remove("active");
+    header.classList.add("hide");
   }
 });
