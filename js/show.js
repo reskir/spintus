@@ -28,8 +28,6 @@ function isElementInViewport (el) {
     );
 }
 
-var page = document.querySelector('.page');
-
 
 if(lines.length > 0) {
   Array.from(lines).forEach(function(element, index){
@@ -37,21 +35,39 @@ if(lines.length > 0) {
   });
 }
 
+var header = document.querySelector(".header_fixed");
+var FIXED_HEADER_APPEARS = 200;
 
-page.addEventListener('scroll', function(e) {
-  if(e.target.scrollTop > 5) {
-    header.classList.add('scrolled');
+
+var last_known_scroll_position = 0;
+var scrolling = false;
+
+var handleScroll = function(evt){
+  if (!evt) evt = event;
+  if(event.deltaY === -100) {
+    header.classList.remove("hide");
   } else {
-    header.classList.remove('scrolled');
+    header.classList.add("hide");
   }
-});
+};
 
-var header = document.querySelector(".header")
 
-document.addEventListener("scroll", function(e) {
-  if (window.scrollY > 350) {
-    header.classList.add("active");
-  } else {
-    header.classList.remove("active");
+function doSomething(scroll_pos) {
+  // do something with the scroll position
+    if (scroll_pos >= FIXED_HEADER_APPEARS) {
+      header.classList.remove("hide");
+    } else {
+      header.classList.add("hide");
+    }
+}
+
+window.addEventListener('scroll', function(e) {
+  last_known_scroll_position = window.scrollY;
+  if (!scrolling) {
+    window.requestAnimationFrame(function() {
+      doSomething(last_known_scroll_position);
+      scrolling = false;
+    });
   }
+  scrolling = true;
 });

@@ -15,7 +15,7 @@ h3,
 h4,
 h5 {
     font-family: $headings-fonts;
-    font-weight: 700;
+    font-weight: normal;
 }
 
 p {
@@ -31,6 +31,10 @@ p {
     height: 2px;
     width: 0;
     background-color: #5c5edc;
+}
+
+.center {
+  text-align: center;
 }
 
 // ::-webkit-scrollbar {
@@ -81,5 +85,7 @@ p {
 }
 
 .main-content {
-    margin-top: 92px;
+    // margin-top: 91px;
+    width: 960px;
+    margin: 0 auto;
 }
