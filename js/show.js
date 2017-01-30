@@ -28,23 +28,12 @@ function isElementInViewport (el) {
     );
 }
 
-var page = document.querySelector('.page');
-
 
 if(lines.length > 0) {
   Array.from(lines).forEach(function(element, index){
     element.style.width = "100%";
   });
 }
-
-
-page.addEventListener('scroll', function(e) {
-  if(e.target.scrollTop > 5) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
-});
 
 var header = document.querySelector(".header_fixed");
 var FIXED_HEADER_APPEARS = 200;
@@ -56,7 +45,6 @@ var scrolling = false;
 var handleScroll = function(evt){
   if (!evt) evt = event;
   if(event.deltaY === -100) {
-    console.log(event.deltaY);
     header.classList.remove("hide");
   } else {
     header.classList.add("hide");
@@ -64,15 +52,12 @@ var handleScroll = function(evt){
 };
 
 
-function doSomething(scroll_pos, evt) {
+function doSomething(scroll_pos) {
   // do something with the scroll position
     if (scroll_pos >= FIXED_HEADER_APPEARS) {
-      window.addEventListener('DOMMouseScroll', handleScroll,false); // for Firefox
-      window.addEventListener('mousewheel', handleScroll,false); // for everyone else
+      header.classList.remove("hide");
     } else {
       header.classList.add("hide");
-      window.removeEventListener('DOMMouseScroll', handleScroll,false); // for Firefox
-      window.removeEventListener('mousewheel', handleScroll,false); // for everyone else
     }
 }
 
@@ -86,10 +71,3 @@ window.addEventListener('scroll', function(e) {
   }
   scrolling = true;
 });
-// document.addEventListener("scroll", function(e) {
-//   if (window.scrollY >= FIXED_HEADER_APPEARS) {
-//     header.classList.remove("hide");
-//   } else {
-//     header.classList.add("hide");
-//   }
-// });

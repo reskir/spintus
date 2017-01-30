@@ -1,50 +1,18 @@
 <?php
 /*
-	Template Name: Projects
+Template Name: About
 */
 ?>
-<?php get_header(); ?>
 
-<div class="main-content">
-
-	<div class="page" id="<?php the_title(); ?>">
-		<div class="row animate" data-emergence="hidden">
-			<?php // Display blog posts on any page @ http://m0n.co/l
-			$temp = $wp_query; $wp_query= null;
-			$wp_query = new WP_Query(); $wp_query->query('showposts=10' . '&paged='.$paged);
-			while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-
-				<div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
-					<header class="bp-header cf project_list" >
-							<!-- <span>  <div class="smaller"> Autorius: 	<?php the_author(); ?>   <br />  Data:  <?php the_date(); ?></div> </span> -->
-							<div class="info row top-xs">
-								<h1 class="bp-header__title" > <a class="header__link" href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h1>
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<a href="<?php the_permalink(); ?>">
-										<div class="thumbnail col-lg-12" style="background-image: url('<?php the_post_thumbnail_url() ?>');">
-										</div>
-									</a>
-									<br />
-									<a class="link" href=" <?php the_permalink(); ?> "> Skaityti daugiau </a>
-
-								</div>
-							</div>
-					</header>
-			</div>
-
-			<?php endwhile; ?>
-
-			<?php if ($paged > 1) { ?>
-
-			<?php } else { ?>
+<?php get_header() ?>
 
 
-			<?php } ?>
+        <?php
+  				if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-			<?php wp_reset_postdata(); ?>
-		</div>
-	</div>
+  					get_template_part( 'content-projects', get_post_format() );
 
- </div>
+  				endwhile; endif;
+  		?>
 
-<?php get_footer(); ?>
+<?php get_footer() ?>

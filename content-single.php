@@ -1,7 +1,5 @@
 <div class="main-content">
   <div class="page project" id="<?php the_title(); ?>">
-      <div class="hero__image" style="background: url('<?php the_post_thumbnail_url(); ?>')"></div>
-
       <div class="bp-header cf animate row" data-emergence="hidden">
           <h1 class="bp-header__title col-lg-12 col-md-12 col-xs-12 col-sm-12" ><?php the_title(); ?></h1>
           <span class="col-lg-12 col-md-12 col-xs-12 col-sm-12">  <div class="smaller"> Autorius: 	<?php the_author(); ?>   <br />  Data:  <?php the_date(); ?></div> </span>

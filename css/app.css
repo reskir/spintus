@@ -448,7 +448,7 @@ a.item:hover {
     .header_fixed a.item {
       font-size: 1.5em !important; }
     .header_fixed.hide {
-      transform: rotate(-2deg);
+      transform: rotate(-10deg);
       visibility: hidden; }
   .header.scrolled {
     box-shadow: 1px 1px 10px #000; }
