@@ -46,6 +46,13 @@ p {
   text-align: center;
 }
 
+.x--p {
+    padding: 12px;
+}
+.x--p-l {
+    padding: 24px;
+}
+
 // ::-webkit-scrollbar {
 //     width: 10px;
 // }
@@ -95,6 +102,7 @@ p {
 
 .main-content {
     // margin-top: 91px;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }

@@ -37,6 +37,12 @@ p {
 .center {
   text-align: center; }
 
+.x--p {
+  padding: 12px; }
+
+.x--p-l {
+  padding: 24px; }
+
 .btn {
   text-shadow: 0 1px 3px rgba(36, 180, 126, 0.4);
   letter-spacing: .025em;
@@ -58,7 +64,8 @@ p {
     background: #3ecf8e; }
 
 .main-content {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto; }
 
 .menu_container {
@@ -230,7 +237,7 @@ a.item:hover {
   transform: rotate3d(0, 0, 1, -45deg); }
 
 .home_block {
-  margin: 0 0 15%; }
+  margin: 10% 0 0 0; }
 
 .home .hero {
   background: url("../images/hero-image.jpg");
@@ -451,7 +458,8 @@ a.item:hover {
   border-bottom: 1px solid #323339;
   transition: all 0.5s ease; }
   .header_inner {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto !important; }
   .header_fixed {
     position: fixed;
