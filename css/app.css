@@ -58,7 +58,7 @@ p {
     background: #3ecf8e; }
 
 .main-content {
-  width: 1400px;
+  width: 1200px;
   margin: 0 auto; }
 
 .menu_container {
@@ -451,7 +451,7 @@ a.item:hover {
   border-bottom: 1px solid #323339;
   transition: all 0.5s ease; }
   .header_inner {
-    width: 1400px;
+    width: 1200px;
     margin: 0 auto !important; }
   .header_fixed {
     position: fixed;
