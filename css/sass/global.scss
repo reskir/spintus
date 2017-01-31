@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Work+Sans:400,700&subset=latin-ext');
 
+html {
+    height: 100%;
+}
 body {
-
     font-family: $body-font;
     background: #3d424e; /* Old Browsers */
     background: -webkit-linear-gradient(top,#3d424e,#1d1e21); /*Safari 5.1-6*/
@@ -11,7 +13,7 @@ body {
     font-size: $base-font-size;
     color: $text-primary;
     overflow-x: hidden;
-    height: 100vh;
+    height: 100%;
 }
 
 body {
