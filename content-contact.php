@@ -16,19 +16,19 @@
                 </ul>
               </div>
 
-              <form class="form col-lg-12 col-md-8 col-sm-10 col-xs-12" required>
+              <form class="form col-lg-12 col-md-12 col-sm-12 col-xs-12" required>
                 <fieldset>
                   <div class="row">
                     <h4 class="col-xs-12">Pasiteiraukite dėl savo projekto</h4>
-                    <div class="input-group col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <div class="input-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
                       <input class="input" type="text" id="name" name="name" required />
                       <label class="label" id="name" for="name">Vardas</label>
                     </div>
-                    <div class="input-group col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <div class="input-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
                       <input class="input" type="email" id="email" name="email" required />
                       <label class="label" id="name" for="email">El.paštas</label>
                     </div>
-                    <div class="input-group col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <div class="input-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
                       <input class="input" type="tel" id="tel" name="tel" required />
                       <label class="label" id="tel" for="tel">Telefono numeris</label>
                     </div>
@@ -38,7 +38,7 @@
 
                 <fieldset>
                   <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-12 col-md-12 col-sm-9 col-xs-12">
                       <h4>Manę domintų</h4>
                       <div class="row x--p">
                           <div class="input-group col-lg-3 col-md-6 col-sm-12 col-xs-12">
