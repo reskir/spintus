@@ -2,15 +2,15 @@
   <div class="page home" id="<?php the_title(); ?>">
 
       <div class="hero" >
-          <div class="hero__text">
+          <!--<div class="hero__text">
             <h3 class="hero__text--default"><span class="red">jūsų</span> baldai </h3>
-          </div>
+          </div>-->
       </div>
 
       <div class="bp-header cf">
 
          <div class="info main">
-           
+
             <div class="line"></div>
             <div class="row middle-lg home_block">
               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
