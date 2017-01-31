@@ -71,7 +71,3 @@ window.addEventListener('scroll', function(e) {
   }
   scrolling = true;
 });
-
-(function(){
-  console.info('loaded')
-})()
