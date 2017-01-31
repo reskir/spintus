@@ -41,6 +41,7 @@
             font-family: $headings-fonts, sans-serif;
             transition: border 1s ease, background 0.4s ease;
             border-bottom: 2px solid $link-color;
+            border-radius: 0%;
             width:100%;
 
             + .label {
@@ -115,4 +116,12 @@
             }
         }
     }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  select,
+  textarea,
+  input {
+    font-size: 16px;
+  }
 }
