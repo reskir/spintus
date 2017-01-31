@@ -1,14 +1,15 @@
 'use strict';
 
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var imageop = require('gulp-image-optimization');
-var imagemin = require('gulp-imagemin');
-var image = require('gulp-image');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const imageop = require('gulp-image-optimization');
+const imagemin = require('gulp-imagemin');
+const image = require('gulp-image');
+const autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function () {
   return gulp.src('css/sass/app.scss')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(gulp.dest('./css'));
 });
 
@@ -29,4 +30,14 @@ gulp.task('images', function(cb) {
 });
 
 
-gulp.task('default', ['sass', 'sass:watch']);
+gulp.task('autoprefixer', ['sass'], () =>
+    gulp.src('css/app.css')
+        .pipe(autoprefixer({
+            browsers: ['last 1 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('./css'))
+);
+
+
+gulp.task('default', ['autoprefixer', 'sass:watch']);

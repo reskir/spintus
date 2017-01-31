@@ -1,7 +1,3 @@
-html.js,
-.js body {
-}
-
 
 
 /* Pages stack */
@@ -19,8 +15,8 @@ html.js,
 	width: 100%;
 	height: 100%;
 	pointer-events: auto;
-	background: $page;
-	box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+	// background: $page;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
 }
 
 .js .pages-stack--open .page {

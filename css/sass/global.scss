@@ -3,7 +3,11 @@
 body {
 
     font-family: $body-font;
-    background: $body;
+    background: #3d424e; /* Old Browsers */
+    background: -webkit-linear-gradient(top,#3d424e,#1d1e21); /*Safari 5.1-6*/
+    background: -o-linear-gradient(top,#3d424e,#1d1e21); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top,#3d424e,#1d1e21); /*Fx 3.6-15*/
+    background: linear-gradient(to bottom, #3d424e, #1d1e21); /*Standard*/
     font-size: $base-font-size;
     color: $text-primary;
     overflow-x: hidden;
@@ -53,33 +57,16 @@ p {
     padding: 24px;
 }
 
-// ::-webkit-scrollbar {
-//     width: 10px;
-// }
-
-// ::-webkit-scrollbar-track {
-//     // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-//     background-color: white;
-//     border-radius: 0;
-// }
-
-// ::-webkit-scrollbar-thumb {
-//     border-radius: 0;
-//     background-color: $body;
-//     // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
-// }
-
 .btn {
   text-shadow: 0 1px 3px rgba(36,180,126,.4);
-  letter-spacing: .025em;
   cursor: pointer;
   transition: all .15s ease;
-  font-size: 2em;
+  font-size: 1.5em;
+  font-family: $headings-fonts;
 
   outline:none;
-  font-family: $headings-fonts, serif;
   border:0;
-  padding: 12px;
+  padding: 6px 12px;
   border-radius: 4px;
   color:white;
 
@@ -101,7 +88,6 @@ p {
 }
 
 .main-content {
-    // margin-top: 91px;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;

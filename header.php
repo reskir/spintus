@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<script>document.body.className += ' fade-out';</script>
+<script>document.body.className += ' fade-out ';</script>
 
 
 
