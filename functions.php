@@ -1,10 +1,8 @@
 <?php
 // Add scripts and stylesheets
 function css_scripts() {
+	//wp_enqueue_style( 'grid', get_template_directory_uri() . '/css/sass/grid.css', array(), '0.0.1' );
 	wp_enqueue_style( 'app-css', get_template_directory_uri() . '/css/app.css', array(), '0.0.1' );
-	wp_enqueue_style( 'grid', get_template_directory_uri() . '/css/flexboxgrid.min.css', array(), '0.0.1' );
-	//wp_enqueue_style( 'demo-stack-nav', get_template_directory_uri() . '/css/stack-nav/demo.css', array(), '0.0.1' );
-
 }
 
 function js_scripts() {

@@ -33,7 +33,7 @@ gulp.task('images', function(cb) {
 gulp.task('autoprefixer', ['sass'], () =>
     gulp.src('css/app.css')
         .pipe(autoprefixer({
-            browsers: ['last 1 versions'],
+            browsers: ['last 2 versions'],
             cascade: false
         }))
         .pipe(gulp.dest('./css'))
