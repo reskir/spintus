@@ -1,18 +1,16 @@
 @import 'colors.scss';
 @import 'variables.scss';
-
 @import 'global.scss';
+@import 'layout.scss';
+@import 'animation.scss';
 
-@import 'navigation.scss';
 
+@import 'pages/home.scss';
+@import 'pages/about.scss';
+@import 'pages/project.scss';
+@import 'pages/contact.scss';
 
-@import "home-page.scss";
-@import 'about-page.scss';
-@import 'project-page.scss';
-@import "contact-page.scss";
-
-@import "stack-nav.scss";
-@import "layout.scss";
-@import "header.scss";
-@import "main.scss";
-@import "animation.scss";
+@import 'components/navigation.scss';
+@import 'components/stack-nav.scss';
+@import 'components/header.scss';
+@import 'components/main.scss';

@@ -72,7 +72,7 @@
                       <h4>Komentaras</h4>
                     </div>
                     <div class="input-group col-lg-6 col-md-10 col-sm-12 col-xs-12">
-                      <textarea class="" noresize></textarea>
+                      <textarea class="input--textarea" noresize></textarea>
                     </div>
 
                   </div>
@@ -80,7 +80,7 @@
 
                 <fieldset>
                   <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-xs-12">
                       <button class="btn btn--success" type="submit">Bendrauti</button>
                     </div>
                   </div>
