@@ -4,10 +4,11 @@
     left:0;
     width: 100%;
     z-index: 2;
-    background: $page;
+    // background: $page;
     transition: background 0.3s linear, box-shadow 0.4s ease;
-    border-bottom: 1px solid #323339;
+    // border-bottom: 1px solid #323339;
     transition: all 0.5s ease;
+    padding: 12px;
 
     &_inner {
         max-width: 1200px;
@@ -23,6 +24,7 @@
         transform-origin: left;
         box-shadow: 1px 1px 10px #222;
         border-bottom: 1px solid $page;
+
         .logo {
             font-size: 2em !important;
         }
@@ -48,20 +50,13 @@
         border: none;
         outline: none;
         font-size: 2em;
+        font-weight: bold;
         text-transform: uppercase;
         color: white;
         transition: font-size 0.5s ease;
 
         &:hover {
             color: white;
-            opacity: 0.5;
         }
-    }
-}
-@media screen and (max-width: 40em) {
-    .logo {
-        // left: auto;
-        // right:80px;
-        // top:10px;
     }
 }

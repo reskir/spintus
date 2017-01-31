@@ -3,7 +3,7 @@
 
       <div class="hero" >
           <div class="hero__text">
-            <h3 class="hero__text--default">Baldai, <br> prisitaikantys <br> <span class="red">jūsų</span> poreikiams</h3>
+            <h3 class="hero__text--default"><span class="red">jūsų</span> baldai </h3>
           </div>
       </div>
 
@@ -30,7 +30,7 @@
               </p>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
-                <img src="http://spintus.lt/dev/wp-content/uploads/2016/10/kitchen-1-1024x683.jpg" alt="" class="alignnone" style="width:100%" />
+                <img src="http://spintus.lt/dev/wp-content/uploads/2017/01/kitchen-1-2.jpg" alt="" class="alignnone" style="width:100%" />
               </div>
             </div>
 

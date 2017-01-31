@@ -12,18 +12,18 @@
         width: 100%;
         background-size: cover;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: flex-end;
 
         &__text {
-            font-size: calc(3vw + 10px);
+            font-size: calc(2.5vw + 10px);
             padding: 10px;
             font-weight: 100;
             position: relative;
             &--default {
                 padding: $base-size-unit * 4;
                 color: #a4a5ba;
-                text-align: right;
+                text-align: left;
                 text-transform: uppercase;
                 font-weight: normal;
                 .red {
