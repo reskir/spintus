@@ -50,7 +50,7 @@ p {
     background: #3ecf8e; }
 
 .main-content {
-  width: 960px;
+  width: 1400px;
   margin: 0 auto; }
 
 .menu_container {
@@ -228,7 +228,7 @@ a.item:hover {
   background: url("../images/hero-image.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  height: calc(100vh - 91px);
+  height: 600px;
   width: 100%;
   background-size: cover;
   display: flex;
@@ -444,6 +444,9 @@ a.item:hover {
   transition: background 0.3s linear, box-shadow 0.4s ease;
   border-bottom: 1px solid #323339;
   transition: all 0.5s ease; }
+  .header_inner {
+    width: 1400px;
+    margin: 0 auto !important; }
   .header_fixed {
     position: fixed;
     opacity: 1;
@@ -481,11 +484,11 @@ a.item:hover {
 .animate {
   transition: opacity 0.8s ease, transform 1.2s ease; }
   .animate[data-emergence="hidden"] {
-    transform: translateY(80px);
+    transform: translateX(80px);
     opacity: 0; }
   .animate[data-emergence="visible"] {
     opacity: 1;
-    transform: translateY(0px); }
+    transform: translateX(0px); }
 
 .line {
   transition: width 1s ease-in-out; }

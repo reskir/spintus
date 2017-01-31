@@ -9,6 +9,11 @@
     border-bottom: 1px solid #323339;
     transition: all 0.5s ease;
 
+    &_inner {
+        width: 1400px;
+        margin: 0 auto !important;
+    }
+
     &_fixed {
         position:fixed;
         opacity:1;

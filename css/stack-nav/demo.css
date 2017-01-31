@@ -192,7 +192,7 @@ a:hover {
 
 @media screen and (max-width: 40em) {
 	.bp-header {
-		padding: 50px 20px 1em;
+		padding: 0px 20px 0em;
 	}
 	.bp-header__title {
 		font-size: 1.8em;
