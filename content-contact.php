@@ -12,19 +12,19 @@
                 </ul>
               </div>
 
-              <form class="form col-lg-8 col-md-8 col-sm-10 col-xs-12" required>
+              <form class="form col-lg-12 col-md-8 col-sm-10 col-xs-12" required>
 
                 <fieldset>
                   <div class="row">
-                    <div class="input-group col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                    <div class="input-group col-lg-4 col-md-12 col-sm-12 col-xs-12">
                       <input class="input" type="text" id="name" name="name" required />
                       <label class="label" id="name" for="name">Vardas</label>
                     </div>
-                    <div class="input-group col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                    <div class="input-group col-lg-4 col-md-12 col-sm-12 col-xs-12">
                       <input class="input" type="email" id="email" name="email" required />
                       <label class="label" id="name" for="email">El.paštas</label>
                     </div>
-                    <div class="input-group col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                    <div class="input-group col-lg-4 col-md-12 col-sm-12 col-xs-12">
                       <input class="input" type="tel" id="tel" name="tel" required />
                       <label class="label" id="tel" for="tel">Telefono numeris</label>
                     </div>
@@ -71,7 +71,7 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                       <h4>Komentaras</h4>
                     </div>
-                    <div class="input-group col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                    <div class="input-group col-lg-6 col-md-10 col-sm-12 col-xs-12">
                       <textarea class="" noresize></textarea>
                     </div>
 

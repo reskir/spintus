@@ -82,6 +82,10 @@
                     }
                 }
 
+                &:focus {
+                    border: 1px solid green;
+                }
+
                 &:checked {
                   + .label:after {
                    position:absolute;
