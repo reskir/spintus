@@ -31,6 +31,12 @@ h5 {
     font-weight: normal;
 }
 
+a {
+    color: $link-color;
+    text-decoration: none;
+}
+
+
 p {
     margin: 0;
     line-height: 24px;
@@ -41,9 +47,9 @@ p {
 }
 
 .line {
-    height: 2px;
-    width: 0;
-    background-color: #5c5edc;
+    height: $base-size-unit;
+    width: 100%;
+    background-color: #21242b;
 }
 
 .center {
@@ -88,7 +94,5 @@ p {
 }
 
 .main-content {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
+    @extend .wrapper
 }

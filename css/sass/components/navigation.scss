@@ -64,6 +64,8 @@ a.item {
     text-transform: uppercase;
     font-family: $headings-fonts, sans-serif;
     transition: font-size 0.5s ease;
+    text-decoration: none;
+    color: $link-color;
 }
 
 a.item:focus,

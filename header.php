@@ -3,8 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>
 		<?php wp_title( '-', true, 'right' ); ?>
 	</title>
@@ -12,17 +11,20 @@
 </head>
 
 <body>
-<script>document.body.className += ' fade-out ';</script>
+<script>
+document.body.className += ' fade-out ';
+</script>
 
 
 
 <div id="header" class="header">
-	<div class="row middle-lg middle-xs middle-md middle-sm header_inner">
+
+	<div class="row middle-xs header_inner">
 		<div class="col-lg-3 col-md-2 col-sm-10 col-xs-10">
 			<a class="logo" href="<?php bloginfo('url'); ?>"> <?php bloginfo('name'); ?> </a>
-		</div style="display:inline-block; margin:0;">
+		</div>
 
-		<nav class="col-lg-9 col-md-10 col-sm-12 col-xs-12 end-lg menu_container hide">
+		<nav class="col-lg-9 col-md-10 col-sm-12 col-xs-12 end-xs menu_container hide">
 			<?php
 			//Primary navigation menu.
 			$my_menu = array(
@@ -43,6 +45,7 @@
 			<button class="menu-button"><span>Menu</span></button>
 		</div>
 	</div>
+
 </div>
 
 <div class="overlay overlay_is--hidden">

@@ -10,6 +10,8 @@
       <div class="bp-header cf">
 
          <div class="info main">
+           
+            <div class="line"></div>
             <div class="row middle-lg home_block">
               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
                 <img src="http://spintus.lt/dev/wp-content/uploads/2016/10/kitchen-1-1024x683.jpg" alt="" class="alignnone" style="width:100%" />
@@ -21,6 +23,8 @@
                   </p>
               </div>
             </div>
+
+            <div class="line"></div>
 
             <div class="row middle-lg home_block">
               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">

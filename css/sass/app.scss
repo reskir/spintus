@@ -1,8 +1,8 @@
-@import 'colors.scss';
-@import 'variables.scss';
-@import 'global.scss';
-@import 'layout.scss';
-@import 'animation.scss';
+@import 'global/mixin.scss';
+
+@import 'global/colors.scss';
+@import 'global/variables.scss';
+@import 'global/global.scss';
 
 
 @import 'pages/home.scss';
