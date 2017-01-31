@@ -1,17 +1,15 @@
+<div class="home">      
+    <div class="hero">
+      <div class="hero__text">
+            <h3 class="hero__text--default">Funkcionalaus dizaino baldai</h3>
+        </div>
+    </div>
+</div>
 <div class="main-content">
   <div class="page home" id="<?php the_title(); ?>">
-
-      <div class="hero" >
-          <!--<div class="hero__text">
-            <h3 class="hero__text--default"><span class="red">jūsų</span> baldai </h3>
-          </div>-->
-      </div>
-
       <div class="bp-header cf">
 
          <div class="info main">
-
-            <div class="line"></div>
             <div class="row middle-lg home_block">
               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
                 <img src="http://spintus.lt/dev/wp-content/uploads/2016/10/kitchen-1-1024x683.jpg" alt="" class="alignnone" style="width:100%" />
