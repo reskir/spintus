@@ -2,7 +2,7 @@
   <div class="page home" id="<?php the_title(); ?>">
 
       <div class="hero" >
-          <div class="hero__text animate"  data-emergence="hidden">
+          <div class="hero__text">
             <h3 class="hero__text--default">Baldai, <br> prisitaikantys <br> <span class="red">jūsų</span> poreikiams</h3>
           </div>
       </div>

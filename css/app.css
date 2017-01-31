@@ -273,11 +273,12 @@ a.item:hover {
       color: black;
       z-index: 10; }
 
-.about .info p {
-  margin: 30px 0; }
-
-.about .info .image {
-  padding: 6px; }
+.about {
+  padding: 0 24px; }
+  .about .info p {
+    margin: 30px 0; }
+  .about .info .image {
+    padding: 6px; }
 
 .project .info img {
   padding: 6px; }
@@ -407,7 +408,7 @@ a.item:hover {
   width: 100%;
   height: 100%;
   pointer-events: auto;
-  background: #2a2b31;
+  background: #2a2b30;
   box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1); }
 
 .js .pages-stack--open .page {
@@ -424,9 +425,6 @@ a.item:hover {
   top: 0;
   opacity: 0; }
 
-.info {
-  margin-top: 1.5em; }
-
 .poster {
   position: absolute;
   bottom: 4vh;
@@ -440,7 +438,7 @@ a.item:hover {
   left: 0;
   width: 100%;
   z-index: 2;
-  background: #2a2b31;
+  background: #2a2b30;
   transition: background 0.3s linear, box-shadow 0.4s ease;
   border-bottom: 1px solid #323339;
   transition: all 0.5s ease; }
@@ -454,7 +452,7 @@ a.item:hover {
     transition: transform 0.2s ease;
     transform-origin: left;
     box-shadow: 1px 1px 10px #222;
-    border-bottom: 1px solid #2a2b31; }
+    border-bottom: 1px solid #2a2b30; }
     .header_fixed .logo {
       font-size: 2em !important; }
     .header_fixed a.item {
@@ -479,7 +477,7 @@ a.item:hover {
       opacity: 0.5; }
 
 .main {
-  max-width: 100% !important; }
+  margin-top: 5%; }
 
 .animate {
   transition: opacity 0.8s ease, transform 1.2s ease; }
