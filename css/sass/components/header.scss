@@ -1,15 +1,9 @@
 .header {
-    position:relative;
-    top:0;
-    left:0;
-    width: 100%;
-    z-index: 2;
-    transition: background 0.3s linear, box-shadow 0.4s ease;
     transition: all 0.5s ease;
     padding: 12px;
-
+    
     &_inner {
-        @extend .wrapper;
+      @extend .wrapper;  
     }
 
     .logo {
