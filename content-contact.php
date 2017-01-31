@@ -8,14 +8,18 @@
                   <li>Ilja Sapožnikov</li>
                   <li>LT 70001 4565454 123213 Swedbank</li>
                   <li>Ulonų g. 5a, Vilnius</li>
-                  <li>+370 60507073</li>
+                  <li>
+                    <strong>
+                      <a href="tel:+37060507073">+370 60507073</a>
+                    </strong>
+                  </li>
                 </ul>
               </div>
 
               <form class="form col-lg-12 col-md-8 col-sm-10 col-xs-12" required>
-
                 <fieldset>
                   <div class="row">
+                    <h4 class="col-xs-12">Pasiteiraukite dėl savo projekto</h4>
                     <div class="input-group col-lg-4 col-md-12 col-sm-12 col-xs-12">
                       <input class="input" type="text" id="name" name="name" required />
                       <label class="label" id="name" for="name">Vardas</label>
@@ -72,7 +76,7 @@
                       <h4>Komentaras</h4>
                     </div>
                     <div class="input-group col-lg-6 col-md-10 col-sm-12 col-xs-12">
-                      <textarea class="input--textarea" noresize></textarea>
+                      <textarea class="input input--textarea" noresize></textarea>
                     </div>
 
                   </div>
