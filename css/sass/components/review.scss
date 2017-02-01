@@ -1,0 +1,17 @@
+.review {
+    margin: 48px 0;
+    &_image {
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+    }
+    &_quote {
+        font-style: italic;
+        margin:0;
+        margin-bottom: 12px;
+    }
+    &_author {
+        font-size: 14px;
+        color: #8e8e8e;
+    }
+}

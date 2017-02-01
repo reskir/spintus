@@ -44,12 +44,23 @@
            <div class="line"></div>
 
             <div class="row center-xs home_block">
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="x--p-l">
                   <h2>Klientų atsiliepimai</h2>
-                  <p>
-                    Čia reikėtų nurodyti klietų atsiliepimus
-                  </p>
+                  <div class="review row center-xs">
+                    <div class="row middle-xs">
+                      <div class="col-md-4 col-xs-12 end-md">
+                        <img src="/wp-content/uploads/2017/02/kiril.jpg" class="review_image" />
+                      </div>
+                      <div class="col-md-6 col-xs-12 start-xs">
+                        <blockquote class="review_quote">
+                          Ilja atliko labai kokybišką darbą, virtuvė atitiko visus reikalavimus ir pageidavimus.
+                          Buvo atsižvelgta į smulkmenas - apšvietimo integravimas, elektro laidų pravedimas ir integracija su buitine technika.
+                        </blockquote>
+                        <div class="review_author">Kiril</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
