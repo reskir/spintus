@@ -9,9 +9,16 @@
         font-style: italic;
         margin:0;
         margin-bottom: 12px;
+        font-size: 18px;
+        line-height: 28px;
     }
     &_author {
-        font-size: 14px;
         color: #8e8e8e;
+    }
+
+    @media screen and (max-width: 64em) {
+        &_image {
+            margin-bottom: 24px;
+        }
     }
 }

@@ -59,7 +59,7 @@
                             Ilja atliko labai kokybišką darbą, virtuvė atitiko visus reikalavimus ir pageidavimus.
                             Buvo atsižvelgta į smulkmenas - apšvietimo integravimas, elektro laidų pravedimas ir integracija su buitine technika.
                           </blockquote>
-                          <div class="review_author">Kiril</div>
+                          <div class="review_author">Kiril Abaškin</div>
                         </div>
                       </div>
                     </div>
@@ -74,7 +74,7 @@
                             Ilja atliko labai kokybišką darbą, virtuvė atitiko visus reikalavimus ir pageidavimus.
                             Buvo atsižvelgta į smulkmenas - apšvietimo integravimas, elektro laidų pravedimas ir integracija su buitine technika.
                           </blockquote>
-                          <div class="review_author">Kiril</div>
+                          <div class="review_author">Kiril Abaškin</div>
                         </div>
                       </div>
                     </div>
@@ -86,10 +86,10 @@
                         </div>
                         <div class="col-md-6 col-xs-12 start-xs">
                           <blockquote class="review_quote">
-                            Ilja atliko labai kokybišką darbą, virtuvė atitiko visus reikalavimus ir pageidavimus.
-                            Buvo atsižvelgta į smulkmenas - apšvietimo integravimas, elektro laidų pravedimas ir integracija su buitine technika.
+                            <p>Ilja atliko labai kokybišką darbą, virtuvė atitiko visus reikalavimus ir pageidavimus.
+                            Buvo atsižvelgta į smulkmenas - apšvietimo integravimas, elektro laidų pravedimas ir integracija su buitine technika.</p>
                           </blockquote>
-                          <div class="review_author">Kiril</div>
+                          <div class="review_author">Kiril Abaškin</div>
                         </div>
                       </div>
                     </div>

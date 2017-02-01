@@ -13,7 +13,8 @@ jQuery('.review_slider').slick({
     arrows: false,
     dots: true,
     autoplay: true,
-    autoplaySpeed: 5000
+    autoplaySpeed: 5000,
+    draggable: false
 });
 
 // var last_known_scroll_position = 0;
