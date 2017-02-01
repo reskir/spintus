@@ -1,7 +1,7 @@
 <div class="main-content">
   <div class="page" id="<?php the_title(); ?>">
       <div class="bp-header cf about row">
-        	<div class="info col-xs-12 col-lg-8">
+        	<div class="info col-xs-12 col-md-10 col-sm-12 col-lg-8">
             <dl class="accordion">
 
               <dt><a href="">Kiek kainuoja mūsų baldai?</a></dt>

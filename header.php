@@ -20,7 +20,7 @@ document.body.className += ' fade-out ';
 <div id="header" class="header">
 
 	<div class="row middle-xs header_inner">
-		<div class="col-lg-3 col-md-2 col-sm-8 col-xs-9">
+		<div class="col-lg-3 col-md-2 col-sm-8 col-xs-10">
 			<a class="logo" href="<?php bloginfo('url'); ?>"> <?php bloginfo('name'); ?> </a>
 		</div>
 
@@ -41,7 +41,7 @@ document.body.className += ' fade-out ';
 			?>
 		</nav>
 
-		<div class="col-xs-3 col-md-4 col-sm-4 end-xs">
+		<div class="col-xs-2 col-md-4 col-sm-4 end-xs">
 			<button class="menu-button"><span>Menu</span></button>
 		</div>
 	</div>
