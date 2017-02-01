@@ -3,10 +3,12 @@
 <div class="main-content">
 
   <div class="page" id="<?php the_title(); ?>">
-      <div class="bp-header cf about animate row" data-emergence="hidden" >
-          <h1 class="bp-header__title animate col-lg-12 col-md-12 col-sm-12 col-xs-12" data-emergence="hidden">
-              Tokio puslapio nėra
-          </h1>
+      <div class="bp-header cf about row">
+          <div class="bp-header__title col-lg-12 col-md-12 col-sm-12 col-xs-12 center-xs">
+             <h1 class="notfound"> 404 </h1>
+
+             <p> Grįžtame atgal, mes čia nieko neradome :( </p>
+          </div>
       </div>
     </div>
     

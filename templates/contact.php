@@ -76,7 +76,7 @@
                       <h4>Komentaras</h4>
                     </div>
                     <div class="input-group col-lg-6 col-md-10 col-sm-12 col-xs-12">
-                      <textarea class="input input--textarea" noresize></textarea>
+                      <textarea class="input input--textarea" noresize required></textarea>
                     </div>
 
                   </div>
