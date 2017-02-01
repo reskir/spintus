@@ -4,34 +4,39 @@
 	   font-family: $headings-fonts;
 	   font-weight: normal;
 	   margin: 24px 0 0 0;
+		 padding: 12px;
 	   display: flex;
 	   align-items: baseline;
 
 		a {
 			font-size: 25px;
 			color: #8d8d8d;
+			&:hover {
+				 color: white;
+		 	}
 		}
 	   &:before {
-		   content: '\21C0';
-		   margin-right: 6px;
+		  //  content: '\21C0';
+		  //  margin-right: 6px;
 	   }
 		&.active {
 			a {
 			  color: white;
 		  	}
 			&:before {
-			content: '\21C2';
-			margin-right: 12px;
-			color: white;
+			// content: '\21C2';
+			// margin-right: 12px;
+			// color: white;
 		}
 	}
    }  
 
   dd {
 	 display: none;
-     font-size: 16px;
+   font-size: 16px;
 	 margin:0;
-	 padding: 12px 24px;
+	 padding: 12px 24px 24px 12px;
+	 border-bottom: 2px solid lightslategrey;
 	 &.active {
 		 display: block;
 		 
