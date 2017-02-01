@@ -34,7 +34,7 @@
                     </tr>
                     <tr>
                       <td>Lauko baldų komplektas</td>
-                      <td class="numeric"> €300 - €1200 </td>
+                      <td class="numeric"> €500 - €1200 </td>
                     </tr>
                     <tr>
                       <td>
