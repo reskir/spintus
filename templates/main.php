@@ -51,7 +51,7 @@
                     <div class="review row center-xs">
                       <div class="row middle-xs center-xs">
                         <div class="col-md-2 col-xs-12 end-md">
-                          <img src="<?php get_stylesheet_directory_uri(); ?>/wp-content/uploads/2017/02/kiril.jpg" class="review_image" />
+                          <img src="<?php echo get_template_directory_uri(); ?>/images/reviews/kiril.jpg" class="review_image" />
                         </div>
                         <div class="col-md-6 col-xs-12 start-xs">
                           <blockquote class="review_quote">
@@ -66,7 +66,7 @@
                     <div class="review row center-xs">
                       <div class="row middle-xs center-xs">
                         <div class="col-md-2 col-xs-12 end-md">
-                          <img src="<?php get_stylesheet_directory_uri(); ?>/wp-content/uploads/2017/02/kiril.jpg" class="review_image" />
+                          <img src="<?php echo get_template_directory_uri(); ?>/images/reviews/kiril.jpg" class="review_image" />
                         </div>
                         <div class="col-md-6 col-xs-12 start-xs">
                           <blockquote class="review_quote">
@@ -81,7 +81,7 @@
                     <div class="review row center-xs">
                       <div class="row middle-xs center-xs">
                         <div class="col-md-2 col-xs-12 end-md">
-                          <img src="<?php get_stylesheet_directory_uri(); ?>/wp-content/uploads/2017/02/kiril.jpg" class="review_image" />
+                          <img src="<?php echo get_template_directory_uri(); ?>/images/reviews/kiril.jpg" class="review_image" />
                         </div>
                         <div class="col-md-6 col-xs-12 start-xs">
                           <blockquote class="review_quote">
