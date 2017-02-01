@@ -5,8 +5,8 @@
             <h3> Dažniausiai užduodami klausimai </h3>
             <dl class="accordion">
 
-              <dt><a href="">Kiek kainuoja pagaminti baldus?</a></dt>
-              <dd>
+              <dt class="active"><a href="">Kiek kainuoja pagaminti baldus?</a></dt>
+              <dd class="active">
                 <p>Kainos priklauso nuo projekto sudėtingumo ir papildomų reikalavimų. Kainoms taip pat turi įtakos medžiagos, plotis ir kita.</p>
                 <table class="table">
                   <colgroup>
@@ -51,7 +51,7 @@
               
               </dd>
 
-              <dt><a href="">Kaip mes dirbame?</a></dt>
+              <dt ><a href="">Kaip mes dirbame?</a></dt>
               <dd>Iš pradžių mes susitinkame su klientu ir išsiaiškiname kuo mes galėtume jam padėti. Aptarimo metu...</dd>
 
               <dt><a href="">Garantinis aptarnavimas</a></dt>
