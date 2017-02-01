@@ -2,11 +2,12 @@
   <div class="page" id="<?php the_title(); ?>">
       <div class="bp-header cf about row">
         	<div class="info col-xs-12 col-md-10 col-sm-12 col-lg-8">
+            <h3> Dažniausiai užduodami klausimai </h3>
             <dl class="accordion">
 
               <dt><a href="">Kiek kainuoja pagaminti baldus?</a></dt>
               <dd>
-                Kainos priklauso nuo projekto sudėtingumo ir papildomų reikalavimų. Kainoms taip pat turi įtakos medžiagos, plotis ir kita.
+                <p>Kainos priklauso nuo projekto sudėtingumo ir papildomų reikalavimų. Kainoms taip pat turi įtakos medžiagos, plotis ir kita.</p>
                 <table class="table">
                   <colgroup>
                   <col style="width: 70%" />
@@ -46,6 +47,7 @@
                     </tr>
                   </tbody>
                 </table>
+                <div class="smaller"><span class="red">*</span> Lentelėje pateikiamos apytikslės kainos.</div>
               
               </dd>
 
