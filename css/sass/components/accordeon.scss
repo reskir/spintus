@@ -3,8 +3,9 @@
    dt {
 	   font-family: $headings-fonts;
 	   font-weight: normal;
-	   margin: 24px 0;
-	   vertical-align: top;
+	   margin: 24px 0 0 0;
+	   display: flex;
+	   align-items: baseline;
 
 		a {
 			font-size: 25px;
@@ -21,6 +22,7 @@
 			&:before {
 			content: '\21C2';
 			margin-right: 12px;
+			color: white;
 		}
 	}
    }  

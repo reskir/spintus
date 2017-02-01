@@ -2,7 +2,9 @@
 // Add scripts and stylesheets
 function css_scripts() {
 	//wp_enqueue_style( 'grid', get_template_directory_uri() . '/css/sass/grid.css', array(), '0.0.1' );
-	wp_enqueue_style( 'app-css', get_template_directory_uri() . '/css/app.css', array(), '0.0.1' );
+	//wp_enqueue_style( 'app-css', get_template_directory_uri() . '/css/app.css', array(), '0.0.1' );
+	wp_register_style( 'app-css', get_template_directory_uri().'/css/app.css', array(), filemtime( get_template_directory().'/css/app.css' ) );
+	wp_enqueue_style( 'app-css' );
 }
 
 function js_scripts() {
@@ -19,8 +21,6 @@ add_action('wp_enqueue_scripts', 'css_scripts' );
 
 //change class on <a> element
 add_filter('wp_list_pages', create_function('$p', 'return str_replace("<a ", "<a class=\"item\" ", $p);'));
-
-
 
 // WordPress Titles
 function startwordpress_wp_title( $title, $sep ) {
@@ -72,8 +72,7 @@ function custom_settings_page_setup() {
   add_settings_section('section', 'All Settings', null, 'theme-options');
   add_settings_field('twitter', 'Twitter URL', 'setting_twitter', 'theme-options', 'section');
   add_settings_field('github', 'GitHub URL', 'setting_github', 'theme-options', 'section');
-
-	register_setting('section', 'twitter');
+  register_setting('section', 'twitter');
   register_setting('section', 'github');
 }
 add_action( 'admin_init', 'custom_settings_page_setup' );

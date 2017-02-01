@@ -4,7 +4,7 @@
         	<div class="info col-xs-12 col-md-10 col-sm-12 col-lg-8">
             <dl class="accordion">
 
-              <dt><a href="">Kiek kainuoja mūsų baldai?</a></dt>
+              <dt><a href="">Kiek kainuoja pagaminti baldus?</a></dt>
               <dd>
                 Kainos priklauso nuo projekto sudėtingumo ir papildomų reikalavimų. Kainoms taip pat turi įtakos medžiagos, plotis ir kita.
                 <table class="table">
@@ -50,16 +50,16 @@
               </dd>
 
               <dt><a href="">Kaip mes dirbame?</a></dt>
-              <dd>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</dd>
+              <dd>Iš pradžių mes susitinkame su klientu ir išsiaiškiname kuo mes galėtume jam padėti. Aptarimo metu...</dd>
 
               <dt><a href="">Garantinis aptarnavimas</a></dt>
-              <dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
+              <dd>Parašyti kažką apie garantinį</dd>
 
               <dt><a href="">Baldų gaminimo laikas?</a></dt>
-              <dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
+              <dd>Kiek užtrunka pagaminti baldus</dd>
 
               <dt><a href="">Mūsų darbo procesas</a></dt>
-              <dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
+              <dd>Parodyti arba išaiškinti darbo procesą</dd>
 
               <dt><a href="">Kaip padaryti užsakymą?</a></dt>
               <dd>
