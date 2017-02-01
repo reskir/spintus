@@ -10,7 +10,7 @@ Template Name: About
         <?php
   				if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-  					get_template_part( 'content-projects', get_post_format() );
+  					get_template_part( 'templates/projects', get_post_format() );
 
   				endwhile; endif;
   		?>
