@@ -5,24 +5,25 @@
 	   font-weight: normal;
 	   margin: 24px 0;
 	   vertical-align: top;
+
+		a {
+			font-size: 25px;
+			color: #8d8d8d;
+		}
 	   &:before {
 		   content: '\21C0';
 		   margin-right: 6px;
 	   }
 		&.active {
+			a {
+			  color: white;
+		  	}
 			&:before {
 			content: '\21C2';
 			margin-right: 12px;
 		}
 	}
    }  
-   dt, dd {
-      a {
-        color: white;
-		font-size: 20px;
-      }
-	  
-   }
 
   dd {
 	 display: none;
