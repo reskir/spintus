@@ -7,8 +7,14 @@ var overlay = document.querySelector('.overlay');
 button.addEventListener('click', function() {
   this.classList.toggle('menu-button--open');
   overlay.classList.toggle('overlay_is--hidden');
-})
+}) 
 
+jQuery('.review_slider').slick({
+    arrows: false,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 5000
+});
 
 // var last_known_scroll_position = 0;
 // var scrolling = false;

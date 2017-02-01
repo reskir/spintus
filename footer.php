@@ -20,9 +20,7 @@
               <p class="smaller">Informacija apie puslapį</p>
             </div>
        </div>
-
-
-
+    
    <?php wp_footer(); ?>
 
   </body>
