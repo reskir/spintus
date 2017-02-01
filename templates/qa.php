@@ -65,7 +65,7 @@
 
               <dt><a href="">Kaip padaryti užsakymą?</a></dt>
               <dd>
-                Paskambinkite arba užpildykite <a href="/kontaktai"> formą </a> mūsų puslapyje.
+                Paskambinkite arba užpildykite <a href="<?php echo site_url(); ?>/kontaktai"> formą </a> mūsų puslapyje.
               </dd>
 
 
