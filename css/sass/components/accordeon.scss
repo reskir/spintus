@@ -36,12 +36,12 @@
 
   dd,dt {
 	&.active {
-		animation: bgChange 1.2s ease;
+		animation: bgChange 1s ease;
 	}
   }
 }
 
 @keyframes bgChange {
-  0% { background: $menu-link-active-color; }
+	0% { background: lighten($brand-red-color, 10%) }
   100% { background: transparent; }
 }
