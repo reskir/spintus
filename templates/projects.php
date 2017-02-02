@@ -1,4 +1,4 @@
-<div class="main-content">
+<div class="main-content project">
   <div class="page " id="<?php the_title(); ?>">
       <div class="bp-header cf">
           <h1 class="bp-header__title center" ><?php the_title(); ?></h1>

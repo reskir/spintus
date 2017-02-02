@@ -8,12 +8,12 @@
 	}
 	td {
 		padding: 6px 12px;
-		background: #23252a;
+		background: $table-td-color;
 	}
 	th {
 		padding: 6px 12px;
 		text-align: left;
-		background: #d64747;
+		background: $table-th-color;
 		color: white;
 		font-weight: normal;
 	}

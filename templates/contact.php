@@ -41,27 +41,27 @@
                     <div class="col-lg-5 col-md-6 col-sm-4 col-xs-12">
                       <h4>Manę domintų</h4>
                       <div class="row x--p">
-                          <div class="input-group col-lg-5 col-md-6 col-sm-12 col-xs-6">
+                          <div class="input-group col-lg-5 col-md-6 col-sm-12 col-xs-12">
                             <input class="input--checkbox" type="checkbox" id="test1" />
                             <label class="label" for="test1">Virtuvės</label>
                           </div>
-                          <div class="input-group col-lg-5 col-md-6 col-sm-12 col-xs-6">
+                          <div class="input-group col-lg-5 col-md-6 col-sm-12 col-xs-12">
                             <input class="input--checkbox" type="checkbox" id="test0" />
                             <label class="label" for="test0">Miegamojo</label>
                           </div>
-                          <div class="input-group col-lg-5 col-md-6 col-sm-12 col-xs-6">
+                          <div class="input-group col-lg-5 col-md-6 col-sm-12 col-xs-12">
                             <input class="input--checkbox" type="checkbox" id="test3" />
                             <label class="label" for="test3">Prieškambario</label>
                           </div>
-                          <div class="input-group col-lg-5 col-md-6 col-sm-12 col-xs-6">
+                          <div class="input-group col-lg-5 col-md-6 col-sm-12 col-xs-12">
                             <input class="input--checkbox" type="checkbox" id="test4" />
                             <label class="label" for="test4">Vonios ir tualeto</label>
                           </div>
-                          <div class="input-group col-lg-5 col-md-6 col-sm-12 col-xs-6">
+                          <div class="input-group col-lg-5 col-md-6 col-sm-12 col-xs-12">
                             <input class="input--checkbox" type="checkbox" id="lauko_baldai" />
                             <label class="label" for="lauko_baldai">Lauko</label>
                           </div>
-                          <div class="input-group col-lg-5 col-md-6 col-sm-12 col-xs-6">
+                          <div class="input-group col-lg-5 col-md-6 col-sm-12 col-xs-12">
                             <input class="input--checkbox" type="checkbox" id="kiti" />
                             <label class="label" for="kiti">Kiti</label>
                           </div>

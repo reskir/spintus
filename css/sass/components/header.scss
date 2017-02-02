@@ -11,19 +11,9 @@
     }
 
     .logo {
-        font-size: 2em;
-        position: relative;
-        padding: 0;
-        cursor: pointer;
-        border: none;
-        outline: none;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: white;
-        text-decoration: none;
-
+           height: 35px;     
         &:hover {
-            color: white;
+            color: $logo-color;
         }
 
     }

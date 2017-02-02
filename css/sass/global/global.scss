@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700|Work+Sans:400,600,700&subset=latin-ext');
 body {
     font-family: $body-font;
-    background: #3d424e; /* Old Browsers */
-    background: -webkit-linear-gradient(top,#3d424e,#1d1e21); /*Safari 5.1-6*/
-    background: -o-linear-gradient(top,#3d424e,#1d1e21); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(top,#3d424e,#1d1e21); /*Fx 3.6-15*/
-    background: linear-gradient(to bottom, #3d424e, #1d1e21); /*Standard*/
+    background: $body-color-1;
     font-size: $base-font-size;
     color: $text-primary;
     overflow-x: hidden;
@@ -41,6 +37,7 @@ a {
 p {
     margin: 0;
     line-height: 1.5;
+    color: $text-primary;
 }
 
 .smaller {
@@ -53,9 +50,9 @@ p {
 }
 
 .line {
-    height: $base-size-unit;
+    height: $base-size-unit + 3px;
     width: 100%;
-    background-color: #21242b;
+    background-color: $line-color;
 }
 .red {
     color: #d64747;

@@ -20,8 +20,8 @@ document.body.className += ' fade-out ';
 <div id="header" class="header">
 
 	<div class="row middle-xs header_inner">
-		<div class="col-lg-3 col-md-2 col-sm-8 col-xs-8">
-			<a class="logo" href="<?php bloginfo('url'); ?>"> <?php bloginfo('name'); ?> </a>
+		<div class="col-lg-3 col-md-2 col-sm-8 col-xs-8 start-lg start-md end-sm end-xs">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" class="logo" />
 		</div>
 
 		<nav class="col-lg-9 col-md-10 col-sm-12 col-xs-12 end-xs menu_container hide">

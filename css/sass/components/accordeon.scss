@@ -10,14 +10,14 @@
 
 		a {
 			font-size: 25px;
-			color: #8d8d8d;
+			color: $text-secondary;
 			&:hover {
-				 color: white;
+				 color: $text-primary;
 		 	}
 		}
 		&.active {
 			a {
-			  color: white;
+			  color: $text-primary;
 		  	}
 		}
    }  
@@ -27,7 +27,7 @@
    font-size: 16px;
 	 margin:0;
 	 padding: 12px 24px 24px 12px;
-	 border-bottom: 2px solid #3d4750;
+	 border-bottom: 2px solid $line-color;
 	 &.active {
 		 display: block;
 		 
@@ -42,6 +42,6 @@
 }
 
 @keyframes bgChange {
-  0% { background:$link-color; }
+  0% { background: $menu-link-active-color; }
   100% { background: transparent; }
 }

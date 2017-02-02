@@ -7,7 +7,7 @@
     .hero {
         background: linear-gradient(to bottom, 
                   rgba(61, 66, 77, 0.1), 
-                  rgba(0,0,0,0.6)),
+                  rgba(0,0,0,0.8)),
                     url(../images/example-bg-4.jpg);
         background-repeat: no-repeat;
         background-position: 100% 80%;
@@ -19,56 +19,22 @@
         align-items: flex-end;
 
         &__text {
-            font-size: calc(5vw + 10px);
+            font-size: calc(3vw + 10px);
             padding: 10px;
             font-weight: 100;
             position: relative;
+            text-transform: uppercase;
             // text-shadow: 1px 1px 5px #656363;
             &--default {
                 padding: $base-size-unit * 4;
                 color: white;
                 text-align: center;
-                font-weight: normal;
+                font-weight: 600;
                 font-family: $headings-fonts;
                 margin-bottom: 4%;
                 &--red {
-                    color:#3cff7b;
+                    color:#FF4D4D;
                 }
-            }
-
-            &--attitude,
-            &--furniture,
-            &--with {
-                position: absolute;
-                background: black;
-                padding: 12px;
-            }
-
-            &--furniture {
-                top: 15%;
-                left: 30%;
-                display: block;
-                transform: rotate(-5deg);
-            }
-
-            &--attitude {
-                top: 45%;
-                left: 30%;
-                display: block;
-                transform: scale(1);
-                text-align: center;
-                z-index: 5;
-            }
-
-            &--with {
-                top: 25%;
-                left: 60%;
-                display: block;
-                transform: rotate(-10deg) scale(0.6);
-                text-align: center;
-                background: yellow;
-                color: black;
-                z-index: 10;
             }
         }
     }

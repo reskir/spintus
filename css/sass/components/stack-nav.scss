@@ -2,5 +2,6 @@
 	position: relative;
 	overflow-y: auto;
 	overflow-x: hidden;
-	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	background: $page-bg;
 }

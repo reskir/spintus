@@ -28,7 +28,7 @@
 
 .page_item {
     &.current_page_item {
-       background: #d64747;
+       background: $menu-link-active-color;
       .item {
         color: #fff;
       }
@@ -46,12 +46,12 @@ a.item {
     font-family: $headings-fonts, sans-serif;
     transition: font-size 0.5s ease;
     text-decoration: none;
-    color: $link-color;
+    color: $menu-link-color;
 }
 
 a.item:focus,
 a.item:hover {
-    color: #fff;
+    color: $menu-link-hover-color;
 }
 
 .text-hidden {

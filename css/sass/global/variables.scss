@@ -4,3 +4,32 @@ $body-font: 'Roboto', Arial, sans-serif;
 $base-size-unit: 3px;
 $base-font-size: 16px;
 $base-small-font-size: 12px;
+
+//colors
+
+$brand-red-color: #FF4D4D; 
+
+$body-color-1: #f6f6f6;
+$body-color-2: #FFF;
+$page-bg: #fff;
+$text-primary: #838383;
+$text-secondary: #cecece;
+$link-color: $brand-red-color;
+$line-color: $body-color-1;
+
+
+$menu-link-color: #19192b;
+$menu-link-hover-color: lighten( $menu-link-color, 20% );
+$menu-link-active-color: $brand-red-color;
+$menu-botton-color: #5f656f;
+
+$input-bg: $body-color-1;
+$input-focus-bg: $body-color-1;
+$input-border-color: darken($body-color-1, 10%);
+$checkbox-bg: $body-color-1;
+$checkbox-border: darken($checkbox-bg, 4%);
+$checkbox-dot-bg: #00d69b;
+
+
+$table-td-color: darken($body-color-1, 1%);
+$table-th-color: $link-color;
