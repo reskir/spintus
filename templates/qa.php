@@ -1,7 +1,7 @@
 <div class="main-content">
   <div class="page" id="<?php the_title(); ?>">
-      <div class="bp-header cf about row">
-        	<div class="info col-xs-12 col-md-10 col-sm-12 col-lg-8">
+      <div class="bp-header cf about row center-xs">
+        	<div class="info col-xs-12 col-md-10 col-sm-12 col-lg-8 start-xs">
             <h3> Dažniausiai užduodami klausimai </h3>
             <dl class="accordion">
 

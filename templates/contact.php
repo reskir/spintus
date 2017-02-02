@@ -87,11 +87,6 @@
                   </div>
                 </fieldset>
 
-                <fieldset>
-                  <div class="row">
-                  </div>
-                </fieldset>
-
               </form>
             </div>
 

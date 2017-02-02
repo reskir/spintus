@@ -11,13 +11,13 @@
                   rgba(61,66,77,0.1)),
                     url(../images/example-bg.jpg);
         background-repeat: no-repeat;
-        background-position: 100% 85%;
+        background-position: 100% 87%;
         height: 450px;
         width: 100%;
         background-size: cover;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
 
         &__text {
             font-size: calc(2.5vw + 10px);
