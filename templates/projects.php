@@ -1,8 +1,8 @@
 <div class="main-content project">
   <div class="page " id="<?php the_title(); ?>">
       <div class="bp-header cf">
-          <h1 class="bp-header__title center" ><?php the_title(); ?></h1>
-        	<div class="info project-list">
+          <!--<h1 class="bp-header__title center" ><?php the_title(); ?></h1>-->
+        	<div class="info project-list project_container">
         		<?php the_content(); ?>
             <!--<div class="row center-lg x--p-l">
               <div class="col-lg-2 center-xs">

@@ -53,13 +53,12 @@ document.body.className += ' fade-out ';
 		<?php
 		//Primary navigation menu.
 		$my_menu = array(
-			'container' => '',
-			'menu_class' => '',
+			'container' => 'div',
+			'menu_class' => 'col-md-12 col-xs-12',
 			'depth'     => 0,
 			'before'    => '<span class="screen-reader-text">',
 			'after'     => '</span>',
-			'theme_location' => 'primary',
-			'items_wrap' => '<div id="%1$s" class="%2$s">%3$s</div>'
+			'theme_location' => 'primary'
 		);
 		wp_nav_menu( $my_menu );
 

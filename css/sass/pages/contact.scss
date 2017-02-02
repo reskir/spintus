@@ -113,6 +113,7 @@
 
             &:focus {
                 background: $input-focus-bg;
+                outline: none;
             }
 
             &:valid {
