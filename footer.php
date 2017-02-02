@@ -18,6 +18,7 @@
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 center-xs footer_block">
               <p class="smaller">Informacija apie puslapį</p>
+              <p class="smaller"><?php echo "" . date( 'Y', current_time( 'timestamp', 1 ) );?></p>
             </div>
        </div>
     

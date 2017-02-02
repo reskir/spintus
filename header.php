@@ -21,7 +21,9 @@ document.body.className += ' fade-out ';
 
 	<div class="row middle-xs header_inner">
 		<div class="col-lg-3 col-md-2 col-sm-8 col-xs-8 start-lg start-md end-sm end-xs">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" class="logo" />
+			<a href="<?php echo site_url(); ?>">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" class="logo" />
+			</a>
 		</div>
 
 		<nav class="col-lg-9 col-md-10 col-sm-12 col-xs-12 end-xs menu_container hide">
