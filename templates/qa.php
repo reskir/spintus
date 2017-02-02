@@ -5,8 +5,8 @@
             <h3> Dažniausiai užduodami klausimai </h3>
             <dl class="accordion">
 
-              <dt class="active"><a href="">Kiek kainuoja pagaminti baldus?</a></dt>
-              <dd class="active">
+              <dt><a href="">Kiek kainuoja pagaminti baldus?</a></dt>
+              <dd>
                 <p>Kainos priklauso nuo projekto sudėtingumo ir papildomų reikalavimų. Kainoms taip pat turi įtakos medžiagos, plotis ir kita.</p>
                 <table class="table">
                   <colgroup>

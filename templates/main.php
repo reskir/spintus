@@ -14,10 +14,10 @@
 
          <div class="info main">
             <div class="row middle-xs home_block">
-              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" >
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 first-lg first-md first-sm" >
                 <img src="http://spintus.lt/dev/wp-content/uploads/2016/10/kitchen-1-1024x683.jpg" alt="" class="alignnone" style="width:100%;" />
               </div>
-              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 first-xs">
                 <div class="x--p-l">
                   <h2> Meilė baldams </h2>
                   <p>
