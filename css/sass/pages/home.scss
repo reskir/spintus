@@ -9,9 +9,9 @@
                   rgba(61, 66, 77, 0), 
                   rgba(128, 128, 128, 0.42), 
                   rgba(61,66,77,0.1)),
-                    url(../images/hero-image.jpg);
+                    url(../images/example-bg.jpg);
         background-repeat: no-repeat;
-        background-position: center center;
+        background-position: 100% 85%;
         height: 450px;
         width: 100%;
         background-size: cover;
@@ -25,6 +25,8 @@
             font-weight: 100;
             position: relative;
             font-family: $headings-fonts;
+            font-weight: bold;
+            text-shadow: 1px 1px 5px #656363;
             &--default {
                 padding: $base-size-unit * 4;
                 color: white;

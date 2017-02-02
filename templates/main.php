@@ -1,7 +1,7 @@
 <div class="home">      
     <div class="hero">
       <div class="hero__text">
-            <h3 class="hero__text--default">Funkcionalaus dizaino baldai</h3>
+            <h3 class="hero__text--default">Baldai pritaikyti jūsų erdvei</h3>
         </div>
     </div>
 </div>

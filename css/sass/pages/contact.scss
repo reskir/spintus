@@ -59,8 +59,8 @@
 
             &--checkbox + .label {
               position: relative;
-              padding-left: 24px;
-              line-height: 16px;
+              padding-left: 40px;
+              line-height: 28px;
               cursor: pointer;
               display: flex;
               user-select:none;
@@ -75,9 +75,12 @@
                 content: ' ';
                 left:0;
                 top:0;
-                width: 16px;
-                height: 16px;
+                width: 28px;
+                height: 28px;
                 background: #f8f8f8;
+                &:focus {
+                    outline: 1px solid green;  
+                }
               }
 
                 &:not(:checked) {
@@ -95,10 +98,12 @@
                   + .label:after {
                    position:absolute;
                    content: ' ';
-                   top: 0px;
-                   left: 0px;
-                   width: 16px;
-                   height: 16px;
+                   display: flex;
+                   justify-content: center;
+                   top: 5px;
+                   left: 5px;
+                   width: 18px;
+                   height: 18px;
                    background: #3ecf8e;
                    overflow: hidden;
                   }

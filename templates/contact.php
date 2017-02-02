@@ -38,45 +38,50 @@
 
                 <fieldset>
                   <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-9 col-xs-12">
+                    <div class="col-lg-5 col-md-6 col-sm-4 col-xs-12">
                       <h4>Manę domintų</h4>
                       <div class="row x--p">
-                          <div class="input-group col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                          <div class="input-group col-lg-5 col-md-6 col-sm-12 col-xs-6">
                             <input class="input--checkbox" type="checkbox" id="test1" />
                             <label class="label" for="test1">Virtuvės</label>
                           </div>
-                          <div class="input-group col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                          <div class="input-group col-lg-5 col-md-6 col-sm-12 col-xs-6">
                             <input class="input--checkbox" type="checkbox" id="test0" />
                             <label class="label" for="test0">Miegamojo</label>
                           </div>
-                          <div class="input-group col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                          <div class="input-group col-lg-5 col-md-6 col-sm-12 col-xs-6">
                             <input class="input--checkbox" type="checkbox" id="test3" />
                             <label class="label" for="test3">Prieškambario</label>
                           </div>
-                          <div class="input-group col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                          <div class="input-group col-lg-5 col-md-6 col-sm-12 col-xs-6">
                             <input class="input--checkbox" type="checkbox" id="test4" />
                             <label class="label" for="test4">Vonios ir tualeto</label>
                           </div>
-                          <div class="input-group col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                          <div class="input-group col-lg-5 col-md-6 col-sm-12 col-xs-6">
                             <input class="input--checkbox" type="checkbox" id="lauko_baldai" />
                             <label class="label" for="lauko_baldai">Lauko</label>
                           </div>
-                          <div class="input-group col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                          <div class="input-group col-lg-5 col-md-6 col-sm-12 col-xs-6">
                             <input class="input--checkbox" type="checkbox" id="kiti" />
                             <label class="label" for="kiti">Kiti</label>
                           </div>
                       </div>
                     </div>
+                     <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
+                      <h4>Komentaras</h4>
+                      <div class="input-group">
+                        <textarea class="input input--textarea" noresize required></textarea>
+                      </div>
+                      <div>
+                        <button class="btn btn--success" type="submit">Bendrauti</button>
+                      </div>
+                    </div
                   </div>
                 </fieldset>
 
                 <fieldset>
                   <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                      <h4>Komentaras</h4>
-                    </div>
-                    <div class="input-group col-lg-6 col-md-10 col-sm-12 col-xs-12">
-                      <textarea class="input input--textarea" noresize required></textarea>
                     </div>
 
                   </div>
@@ -84,9 +89,6 @@
 
                 <fieldset>
                   <div class="row">
-                    <div class="col-xs-12">
-                      <button class="btn btn--success" type="submit">Bendrauti</button>
-                    </div>
                   </div>
                 </fieldset>
 
