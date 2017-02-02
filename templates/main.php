@@ -15,10 +15,10 @@
          <div class="info main">
             <div class="row middle-xs home_block">
               <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 first-lg first-md first-sm" >
-                <img src="http://spintus.lt/dev/wp-content/uploads/2016/10/kitchen-1-1024x683.jpg" alt="" class="alignnone" style="width:100%;" />
+                <img src="http://spintus.lt/dev/wp-content/uploads/2016/10/kitchen-1-1024x683.jpg" alt="" class="alignnone x--pv-l" style="width:100%;" />
               </div>
               <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 first-xs">
-                <div class="x--p-l">
+                <div class="x--ph-l">
                   <h2> Meilė baldams </h2>
                   <p>
                     Čia reikėtų info apie procesus, baldų gamyba, Iljos istorija, nuo ko jis pradėjo gaminti, kodėl klientai pasirenka būtent jį
@@ -31,7 +31,7 @@
 
             <div class="row middle-lg home_block">
               <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <div class="x--p-l">
+                <div class="x--ph-l">
                   <h2> Kokybė ir kruopštumas </h2>
                   <p>
                      Dėl kokių detalių verta rinktis Iljos baldus ( o ne ikea), kodėl efektyvu dirbti su baldininkų, 
@@ -40,7 +40,7 @@
                 </div>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" >
-                <img src="http://spintus.lt/dev/wp-content/uploads/2017/01/kitchen-1-2.jpg" alt="" class="alignnone" style="width:100%" />
+                <img src="http://spintus.lt/dev/wp-content/uploads/2017/01/kitchen-1-2.jpg" alt="" class="alignnone x--pv-l" style="width:100%" />
               </div>
             </div>
 
