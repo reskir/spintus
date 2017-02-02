@@ -6,13 +6,12 @@
 
     .hero {
         background: linear-gradient(to bottom, 
-                  rgba(61, 66, 77, 0), 
-                  rgba(128, 128, 128, 0.42), 
-                  rgba(61,66,77,0.1)),
-                    url(../images/example-bg.jpg);
+                  rgba(61, 66, 77, 0.1), 
+                  rgba(0,0,0,0.6)),
+                    url(../images/example-bg-4.jpg);
         background-repeat: no-repeat;
-        background-position: 100% 87%;
-        height: 450px;
+        background-position: 100% 80%;
+        height: 500px;
         width: 100%;
         background-size: cover;
         display: flex;
@@ -20,18 +19,21 @@
         align-items: flex-end;
 
         &__text {
-            font-size: calc(2.5vw + 10px);
+            font-size: calc(5vw + 10px);
             padding: 10px;
             font-weight: 100;
             position: relative;
-            font-family: $headings-fonts;
-            font-weight: bold;
-            text-shadow: 1px 1px 5px #656363;
+            // text-shadow: 1px 1px 5px #656363;
             &--default {
                 padding: $base-size-unit * 4;
                 color: white;
                 text-align: center;
                 font-weight: normal;
+                font-family: $headings-fonts;
+                margin-bottom: 4%;
+                &--red {
+                    color:#3cff7b;
+                }
             }
 
             &--attitude,
