@@ -27,7 +27,6 @@
 }
 
 .page_item {
-    padding: 1em;
     &.current_page_item {
        background: #d64747;
       .item {
@@ -38,6 +37,8 @@
 
 
 a.item {
+    display: inline-block;
+    padding: 1.5em;
     font-size: 1.2em;
     position: relative;
     letter-spacing: 1px;

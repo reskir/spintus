@@ -15,20 +15,11 @@
 				 color: white;
 		 	}
 		}
-	   &:before {
-		  //  content: '\21C0';
-		  //  margin-right: 6px;
-	   }
 		&.active {
 			a {
 			  color: white;
 		  	}
-			&:before {
-			// content: '\21C2';
-			// margin-right: 12px;
-			// color: white;
 		}
-	}
    }  
 
   dd {
