@@ -5,7 +5,7 @@
             <h3> Dažniausiai užduodami klausimai </h3>
             <dl class="accordion">
 
-              <dt class="active"><a href="">Kiek kainuoja pagaminti baldus?</a></dt>
+              <dt class="active"><a href="#1">Kiek kainuoja pagaminti baldus?</a></dt>
               <dd class="active">
                 <p>Kainos priklauso nuo projekto sudėtingumo ir papildomų reikalavimų. Kainoms taip pat turi įtakos medžiagos, plotis ir kita.</p>
                 <table class="table">
@@ -51,19 +51,19 @@
               
               </dd>
 
-              <dt ><a href="">Kaip mes dirbame?</a></dt>
+              <dt ><a href="#2">Kaip mes dirbame?</a></dt>
               <dd>Iš pradžių mes susitinkame su klientu ir išsiaiškiname kuo mes galėtume jam padėti. Aptarimo metu...</dd>
 
-              <dt><a href="">Garantinis aptarnavimas</a></dt>
+              <dt><a href="#3">Garantinis aptarnavimas</a></dt>
               <dd>Parašyti kažką apie garantinį</dd>
 
-              <dt><a href="">Baldų gaminimo laikas?</a></dt>
+              <dt><a href="#4">Baldų gaminimo laikas?</a></dt>
               <dd>Kiek užtrunka pagaminti baldus</dd>
 
-              <dt><a href="">Mūsų darbo procesas</a></dt>
+              <dt><a href="#5">Mūsų darbo procesas</a></dt>
               <dd>Parodyti arba išaiškinti darbo procesą</dd>
 
-              <dt><a href="">Kaip padaryti užsakymą?</a></dt>
+              <dt><a href="#6">Kaip padaryti užsakymą?</a></dt>
               <dd>
                 Paskambinkite arba užpildykite <a href="<?php echo site_url(); ?>/kontaktai"> formą </a> mūsų puslapyje.
               </dd>
@@ -83,7 +83,7 @@
           allHeaders.removeClass('active');
           $(this).parent().addClass('active');
           $(this).parent().next().addClass('active');
-          return false;
+          //return false;
         });
 
       })(jQuery);
