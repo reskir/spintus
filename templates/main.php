@@ -108,10 +108,20 @@
     </div>
 </div>
 <script>
- jQuery('.hero__scroll').click(function() {
-    //window.scrollBy(0, window.innerHeight);
-    jQuery('body,html').animate({scrollTop: window.innerHeight}, 600); 
-    //jQuery('body').scrollTo(jQuery('.main-content'));
+
+ var $ = jQuery;
+
+ var setHeight = function(){
+   $('.hero').height(window.innerHeight - $('.header').height());
+ }
+ setHeight()
+
+ $( window ).resize(function() {
+    setHeight()
+});
+
+ $('.hero__scroll').click(function() {
+    $('body,html').animate({scrollTop: window.innerHeight + 10}, 600); 
  });
 </script>
 <!-- /.blog-post -->
