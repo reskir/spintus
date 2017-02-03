@@ -117,7 +117,9 @@
  setHeight()
 
  $( window ).resize(function() {
-    setHeight()
+    if(window.innerHeight/window.innerWidth < 2) {
+      setHeight()
+    }
 });
 
  $('.hero__scroll').click(function() {
