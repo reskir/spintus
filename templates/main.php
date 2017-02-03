@@ -7,7 +7,6 @@
         </div>
     </div>
 </div>
-
 <div class="main-content">
   <div class="page home" id="<?php the_title(); ?>">
       <div class="bp-header cf">
