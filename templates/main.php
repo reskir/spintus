@@ -2,9 +2,10 @@
     <div class="hero">
       <div class="hero__text">
             <h3 class="hero__text--default">
-              Erdvė <span class="hero__text--default--red">gyvenimui</span>
+              Erdvė <span class="hero__text--default--red">gyvenimui</span> <br />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/scroll.svg" style="width: 150px;" />
             </h3>
-        </div>
+      </div>
     </div>
 </div>
 <div class="main-content">
