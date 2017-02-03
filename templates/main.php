@@ -121,7 +121,7 @@
 });
 
  $('.hero__scroll').click(function() {
-    $('body,html').animate({scrollTop: window.innerHeight + 10}, 600); 
+    $('body,html').animate({scrollTop: window.innerHeight + 30}, 600); 
  });
 </script>
 <!-- /.blog-post -->
