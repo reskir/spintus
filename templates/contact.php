@@ -39,7 +39,7 @@
                 <fieldset>
                   <div class="row">
                     <div class="col-lg-5 col-md-6 col-sm-4 col-xs-12">
-                      <h4>Manę domintų</h4>
+                      <h4>Mane domintų</h4>
                       <div class="row x--p">
                           <div class="input-group col-lg-5 col-md-6 col-sm-12 col-xs-12">
                             <input class="input--checkbox" type="checkbox" id="test1" />
