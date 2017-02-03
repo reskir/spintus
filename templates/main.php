@@ -117,7 +117,7 @@
  setHeight()
 
  $( window ).resize(function() {
-    if(window.innerHeight/window.innerWidth < 2) {
+    if(window.innerHeight/window.innerWidth > 2) {
       setHeight()
     }
 });
