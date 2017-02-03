@@ -73,7 +73,6 @@
         	</div>
       </div>
     </div>
-    <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
     <script>
 
     (function($) {

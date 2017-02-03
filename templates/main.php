@@ -1,10 +1,12 @@
 <div class="home">      
     <div class="hero">
-      <div class="hero__text">
-            <h3 class="hero__text--default">
-              Erdvė <span class="hero__text--default--red">gyvenimui</span> <br />
-              <img src="<?php echo get_template_directory_uri(); ?>/images/scroll.svg" style="width: 150px;" />
-            </h3>
+      <div class="hero__content">
+            <div>
+              <img src="<?php echo get_template_directory_uri(); ?>/images/erdve.svg" class="hero__text"/>
+            </div>
+            <div>
+              <img src="<?php echo get_template_directory_uri(); ?>/images/scroll-down.svg" class="hero__scroll"/>
+            </div>
       </div>
     </div>
 </div>
@@ -105,4 +107,11 @@
       </div>
     </div>
 </div>
+<script>
+ jQuery('.hero__scroll').click(function() {
+    //window.scrollBy(0, window.innerHeight);
+    jQuery('body,html').animate({scrollTop: window.innerHeight}, 600); 
+    //jQuery('body').scrollTo(jQuery('.main-content'));
+ });
+</script>
 <!-- /.blog-post -->
