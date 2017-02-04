@@ -4,8 +4,19 @@
     display: flex !important;
     align-items: flex-end;
 
+    &.slick-active {
+        .review_content {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
     &_content {
         padding: 48px;
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 1.2s ease, transform 1.2s ease;
+        transition-delay: 0.3s;
     }
     &_image {
         border-radius: 50%;
