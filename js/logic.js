@@ -19,9 +19,10 @@ jQuery('.review_slider').slick({
 
 if (Modernizr.touch){
    // bind to touchstart, touchmove, etc and watch `event.streamId`
-   document.body.className += ' touch';
+   jQuery("html").addClass(" touch");
 } else {
    // bind to normal click, mousemove, etc
+   alert('not touch')
 }
 
 // var last_known_scroll_position = 0;
