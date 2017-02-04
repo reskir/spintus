@@ -31,7 +31,9 @@
     @media screen and (max-width: 64em) {
         height: 350px;
         &_quote {
-            text-shadow: 1px 1px 10px black;
+            text-shadow: 1px 1px 1px #444;
+            font-size: 16px;
+            line-height: 26px;
         }
         &_image {
             margin-bottom: 24px;
