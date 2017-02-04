@@ -17,23 +17,39 @@
               </div>
 
               <?php
-                  add_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
-                  
-                  $to = 'kiril.abashkin@gmail.com';
-                  $subject = 'The subject';
-                  $body = 'The email body content';
-                  
-                  wp_mail( $to, $subject, $body );
-                  
-                  // Reset content-type to avoid conflicts -- https://core.trac.wordpress.org/ticket/23578
-                  remove_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
-                  
-                  function wpdocs_set_html_mail_content_type() {
-                      return 'text/html';
-                  }
+function send_my_awesome_form(){
+
+    if (!isset($_POST['submit'])) { return; }
+
+    // get the info from the from the form
+    $form = array();
+    $form['name'] = $_POST['name'];
+    $form['email'] = $_POST['email'];
+    $form['tel'] = $_POST['tel'];
+
+    // Build the message
+    $message  = "Name :" . $form['name'] ."\n";
+    $message .= "Company :" . $form['email']  ."\n";
+    $message .= "Email :" . $form['tel']     ."\n";
+
+    //set the form headers
+    $headers = 'From: Contact form <your@contactform.com>';
+
+    // The email subject
+    $subject = 'you got mail';
+
+    // Who are we going to send this form too
+    $send_to = 'kiril.abashkin@gmail.com';
+
+    if (wp_mail( $send_to, $subject, $message, $headers ) ) {
+         wp_redirect(home_url()); exit;
+     }
+}
+
+            add_action('wp_head', 'send_my_awesome_form');
               ?>
 
-              <form method="post" class="form col-lg-12 col-md-12 col-sm-12 col-xs-12" required>
+              <form method="post" action="" class="form col-lg-12 col-md-12 col-sm-12 col-xs-12" required>
                 <fieldset>
                   <div class="row">
                     <h4 class="col-xs-12">Pasiteiraukite dėl savo projekto</h4>
@@ -90,7 +106,7 @@
                         <textarea class="input input--textarea" noresize required id="message" name="message"></textarea>
                       </div>
                       <div>
-                        <button class="btn btn--success" type="submit" id="sub">Bendrauti</button>
+                        <button class="btn btn--success" type="submit" id="submit">Bendrauti</button>
                       </div>
                     </div
                   </div>
