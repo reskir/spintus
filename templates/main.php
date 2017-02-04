@@ -95,8 +95,10 @@
     }
 });
 
+console.log($('.header').height())
+
  $('.hero__scroll').click(function() {
-    $('body,html').animate({scrollTop: window.innerHeight - $('.header').height()}, 600); 
+    $('body,html').animate({scrollTop: $('.hero').height()}, 600); 
  });
 </script>
 <!-- /.blog-post -->
