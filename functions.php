@@ -77,19 +77,24 @@ add_theme_support( 'post-thumbnails' );
 
 // Custom Post Type
 function create_my_custom_post() {
-	register_post_type('my-projects',
+	register_post_type('reviews',
 			array(
 			'labels' => array(
-					'name' => __('My Project'),
-					'singular_name' => __('My Project'),
+				'name' => 'Reviews',
+				'singular_name' => 'Review',
+				'add_new' => 'Add New Review'
 			),
+			'show_ui' => true,
 			'public' => true,
 			'has_archive' => true,
 			'supports' => array(
-					'title',
-					'editor',
-					'thumbnail',
-				  'custom-fields'
+				'title',
+				'editor',
+				'thumbnail',
+				'custom-fields',
+				'author'
 			)
 	));
 }
+
+add_action( 'init', 'create_my_custom_post' );

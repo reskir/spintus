@@ -52,69 +52,36 @@
               <h2>Klientų atsiliepimai</h2>
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="review_slider">
-                  <div class="review" style="background:linear-gradient(to bottom, 
-                    rgba(61, 66, 77, 0.1),
-                    rgba(61, 66, 77, 0.3),
-                    rgba(0,0,0,0.5),
-                    rgba(0,0,0,0.7)), url('<?php echo get_template_directory_uri(); ?>/images/hero-image.jpg') no-repeat center center/cover;">
-                        <div class="row start-xs">
-                          <div class="col-md-7 col-xs-12 review_content">
-                            <blockquote class="review_quote">
-                              Ilja atliko labai kokybišką darbą, virtuvė atitiko visus reikalavimus ir pageidavimus.
-                              Buvo atsižvelgta į smulkmenas - apšvietimo integravimas, elektro laidų pravedimas ir integracija su buitine technika.
-                            </blockquote>
-                            <div class="review_author">Kiril Abaškin</div>
+                  <?php
+                        $args =  array(
+                          'post_type' => 'reviews'
+                        );
+                        $custom_query = new WP_Query( $args );
+                        while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
+
+                        <div class="review" style="background:linear-gradient(to bottom, 
+                        rgba(61, 66, 77, 0.1),
+                        rgba(61, 66, 77, 0.3),
+                        rgba(0,0,0,0.6),
+                        rgba(0,0,0,0.7)), url('<?php echo the_post_thumbnail_url(); ?>') no-repeat center center/cover;">
+                          <div class="row start-xs">
+                            <div class="col-sm-7 col-xs-12 review_content">
+                              <blockquote class="review_quote">
+                                <?php echo strip_tags( get_the_excerpt())?>
+                              </blockquote>
+                              <div class="review_author">
+                                <?php   $mykey_values = get_post_custom_values( 'client' );
+                                        foreach ( $mykey_values as $key => $value ) {
+                                          echo "$value"; 
+                                        } 
+                                ?>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                  </div>
 
-                  <div class="review" style="background:linear-gradient(to bottom, 
-                    rgba(61, 66, 77, 0.1),
-                    rgba(61, 66, 77, 0.3),
-                    rgba(0,0,0,0.6),
-                    rgba(0,0,0,0.7)), url('<?php echo get_template_directory_uri(); ?>/images/example-bg-3.jpg') no-repeat center center/cover;">
-                        <div class="row start-xs">
-                          <div class="col-md-7 col-xs-12 review_content">
-                            <blockquote class="review_quote">
-                              Ilja atliko labai kokybišką darbą, virtuvė atitiko visus reikalavimus ir pageidavimus.
-                              Buvo atsižvelgta į smulkmenas - apšvietimo integravimas, elektro laidų pravedimas ir integracija su buitine technika.
-                            </blockquote>
-                            <div class="review_author">Kiril Abaškin</div>
-                          </div>
-                        </div>
-                  </div>
-                  
-
-                    <!--<div class="review row center-xs">
-                      <div class="row middle-xs center-xs">
-                        <div class="col-md-2 col-xs-12 end-md">
-                          <img src="<?php echo get_template_directory_uri(); ?>/images/reviews/kiril.jpg" class="review_image" />
-                        </div>
-                        <div class="col-md-6 col-xs-12 start-xs">
-                          <blockquote class="review_quote">
-                            Ilja atliko labai kokybišką darbą, virtuvė atitiko visus reikalavimus ir pageidavimus.
-                            Buvo atsižvelgta į smulkmenas - apšvietimo integravimas, elektro laidų pravedimas ir integracija su buitine technika.
-                          </blockquote>
-                          <div class="review_author">Kiril Abaškin</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="review row center-xs">
-                      <div class="row middle-xs center-xs">
-                        <div class="col-md-2 col-xs-12 end-md">
-                          <img src="<?php echo get_template_directory_uri(); ?>/images/reviews/kiril.jpg" class="review_image" />
-                        </div>
-                        <div class="col-md-6 col-xs-12 start-xs">
-                          <blockquote class="review_quote">
-                            <p>Ilja atliko labai kokybišką darbą, virtuvė atitiko visus reikalavimus ir pageidavimus.
-                            Buvo atsižvelgta į smulkmenas - apšvietimo integravimas, elektro laidų pravedimas ir integracija su buitine technika.</p>
-                          </blockquote>
-                          <div class="review_author">Kiril Abaškin</div>
-                        </div>
-                      </div>
-                    </div>-->
-                  </div>
+                  <?php endwhile; ?>
+                </div>
               </div>
             </div>
 

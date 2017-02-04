@@ -13,7 +13,7 @@ jQuery('.review_slider').slick({
     arrows: false,
     dots: true,
     draggable: false,
-    autoplay: true
+    autoplay: false
 });
 
 // var last_known_scroll_position = 0;
