@@ -1,15 +1,3 @@
-<div class="home">      
-    <div class="hero">
-      <div class="hero__content">
-            <div>
-              <img src="<?php echo get_template_directory_uri(); ?>/images/erdve-2.svg" class="hero__text"/>
-            </div>
-            <div>
-              <img src="<?php echo get_template_directory_uri(); ?>/images/scroll-down.svg" class="hero__scroll"/>
-            </div>
-      </div>
-    </div>
-</div>
 <div class="main-content">
   <div class="page home" id="<?php the_title(); ?>">
       <div class="bp-header cf">
@@ -97,7 +85,7 @@
  var $ = jQuery;
 
  var setHeight = function(){
-   $('.hero').height(window.innerHeight - $('.header').height());
+   $('.hero').height(window.innerHeight - ($('.header').height()+24));
  }
  setHeight()
 
@@ -108,7 +96,7 @@
 });
 
  $('.hero__scroll').click(function() {
-    $('body,html').animate({scrollTop: window.innerHeight + 30}, 600); 
+    $('body,html').animate({scrollTop: window.innerHeight - $('.header').height()}, 600); 
  });
 </script>
 <!-- /.blog-post -->

@@ -15,6 +15,20 @@
 document.body.className += ' fade-out ';
 </script>
 
+<?php if( is_front_page() ) {?>
+<div class="home">      
+    <div class="hero">
+      <div class="hero__content">
+            <div>
+              <img src="<?php echo get_template_directory_uri(); ?>/images/erdve-2.svg" class="hero__text"/>
+            </div>
+            <div>
+              <img src="<?php echo get_template_directory_uri(); ?>/images/scroll-down.svg" class="hero__scroll"/>
+            </div>
+      </div>
+    </div>
+</div>
+<?php } ?>
 
 
 <div id="header" class="header">

@@ -4,9 +4,22 @@ var FIXED_HEADER_APPEARS = 200;
 var button = document.querySelector('.menu-button');
 var overlay = document.querySelector('.overlay');
 
+function getOffset( el ) {
+    var _x = 0;
+    var _y = 0;
+    while( el && !isNaN( el.offsetLeft ) && !isNaN( el.offsetTop ) ) {
+        _x += el.offsetLeft - el.scrollLeft;
+        _y += el.offsetTop - el.scrollTop;
+        el = el.offsetParent;
+    }
+    return { top: _y, left: _x };
+}
+var x = getOffset( document.getElementById('header') ).top; 
+
 button.addEventListener('click', function() {
   this.classList.toggle('menu-button--open');
   overlay.classList.toggle('overlay_is--hidden');
+  window.scrollTo(0, x)
 }) 
 
 jQuery('.review_slider').slick({
