@@ -62,8 +62,8 @@
                         <div class="review" style="background:linear-gradient(to bottom, 
                         rgba(61, 66, 77, 0.1),
                         rgba(61, 66, 77, 0.3),
-                        rgba(0,0,0,0.6),
-                        rgba(0,0,0,0.7)), url('<?php echo the_post_thumbnail_url(); ?>') no-repeat center center/cover;">
+                        rgba(0,0,0,0.4),
+                        rgba(0,0,0,0.5)), url('<?php echo the_post_thumbnail_url(); ?>') no-repeat center center/cover;">
                           <div class="row start-xs">
                             <div class="col-sm-7 col-xs-12 review_content">
                               <blockquote class="review_quote">
