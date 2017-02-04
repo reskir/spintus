@@ -1,5 +1,12 @@
 .review {
-    margin: 48px 0;
+    height:500px;
+    width:100%;
+    display: flex !important;
+    align-items: flex-end;
+
+    &_content {
+        padding: 48px;
+    }
     &_image {
         border-radius: 50%;
         width: 120px;
@@ -11,12 +18,21 @@
         margin-bottom: 12px;
         font-size: 18px;
         line-height: 28px;
+        color: white;
     }
     &_author {
         color: $text-secondary;
     }
 
+    &_slider {
+        width: 100%;
+    }
+
     @media screen and (max-width: 64em) {
+        height: 350px;
+        &_quote {
+            text-shadow: 1px 1px 10px black;
+        }
         &_image {
             margin-bottom: 24px;
         }

@@ -2,7 +2,7 @@
     <div class="hero">
       <div class="hero__content">
             <div>
-              <img src="<?php echo get_template_directory_uri(); ?>/images/erdve-3.svg" class="hero__text"/>
+              <img src="<?php echo get_template_directory_uri(); ?>/images/erdve-2.svg" class="hero__text"/>
             </div>
             <div>
               <img src="<?php echo get_template_directory_uri(); ?>/images/scroll-down.svg" class="hero__scroll"/>
@@ -48,27 +48,44 @@
 
            <div class="line"></div>
 
-            <div class="row center-xs home_block">
+            <div class="row center-xs">
+              <h2>Klientų atsiliepimai</h2>
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="x--p-l">
-                  <h2>Klientų atsiliepimai</h2>
-                  <div class="review_slider">
-                    <div class="review row center-xs">
-                      <div class="row middle-xs center-xs">
-                        <div class="col-md-2 col-xs-12 end-md">
-                          <img src="<?php echo get_template_directory_uri(); ?>/images/reviews/kiril.jpg" class="review_image" />
+                <div class="review_slider">
+                  <div class="review" style="background:linear-gradient(to bottom, 
+                    rgba(61, 66, 77, 0.1),
+                    rgba(61, 66, 77, 0.3),
+                    rgba(0,0,0,0.5),
+                    rgba(0,0,0,0.8)), url('<?php echo get_template_directory_uri(); ?>/images/hero-image.jpg') no-repeat center center/cover;">
+                        <div class="row start-xs">
+                          <div class="col-md-6 col-xs-12 review_content">
+                            <blockquote class="review_quote">
+                              Ilja atliko labai kokybišką darbą, virtuvė atitiko visus reikalavimus ir pageidavimus.
+                              Buvo atsižvelgta į smulkmenas - apšvietimo integravimas, elektro laidų pravedimas ir integracija su buitine technika.
+                            </blockquote>
+                            <div class="review_author">Kiril Abaškin</div>
+                          </div>
                         </div>
-                        <div class="col-md-6 col-xs-12 start-xs">
-                          <blockquote class="review_quote">
-                            Ilja atliko labai kokybišką darbą, virtuvė atitiko visus reikalavimus ir pageidavimus.
-                            Buvo atsižvelgta į smulkmenas - apšvietimo integravimas, elektro laidų pravedimas ir integracija su buitine technika.
-                          </blockquote>
-                          <div class="review_author">Kiril Abaškin</div>
-                        </div>
-                      </div>
-                    </div>
+                  </div>
 
-                    <div class="review row center-xs">
+                  <div class="review" style="background:linear-gradient(to bottom, 
+                    rgba(61, 66, 77, 0.1),
+                    rgba(61, 66, 77, 0.3),
+                    rgba(0,0,0,0.6),
+                    rgba(0,0,0,0.8)), url('<?php echo get_template_directory_uri(); ?>/images/example-bg-3.jpg') no-repeat center center/cover;">
+                        <div class="row start-xs">
+                          <div class="col-md-6 col-xs-12 review_content">
+                            <blockquote class="review_quote">
+                              Ilja atliko labai kokybišką darbą, virtuvė atitiko visus reikalavimus ir pageidavimus.
+                              Buvo atsižvelgta į smulkmenas - apšvietimo integravimas, elektro laidų pravedimas ir integracija su buitine technika.
+                            </blockquote>
+                            <div class="review_author">Kiril Abaškin</div>
+                          </div>
+                        </div>
+                  </div>
+                  
+
+                    <!--<div class="review row center-xs">
                       <div class="row middle-xs center-xs">
                         <div class="col-md-2 col-xs-12 end-md">
                           <img src="<?php echo get_template_directory_uri(); ?>/images/reviews/kiril.jpg" class="review_image" />
@@ -96,9 +113,8 @@
                           <div class="review_author">Kiril Abaškin</div>
                         </div>
                       </div>
-                    </div>
+                    </div>-->
                   </div>
-                </div>
               </div>
             </div>
 

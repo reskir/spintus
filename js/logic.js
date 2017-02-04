@@ -12,9 +12,8 @@ button.addEventListener('click', function() {
 jQuery('.review_slider').slick({
     arrows: false,
     dots: true,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    draggable: false
+    draggable: false,
+    autoplay: true
 });
 
 // var last_known_scroll_position = 0;
