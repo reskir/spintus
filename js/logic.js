@@ -16,6 +16,14 @@ jQuery('.review_slider').slick({
     autoplay: false
 });
 
+
+if (Modernizr.touch){
+   // bind to touchstart, touchmove, etc and watch `event.streamId`
+   document.body.className += ' touch';
+} else {
+   // bind to normal click, mousemove, etc
+}
+
 // var last_known_scroll_position = 0;
 // var scrolling = false;
 

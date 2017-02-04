@@ -6,6 +6,7 @@ function css_scripts() {
 }
 
 function js_scripts() {
+	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/modernizr.js', array(), '0.0.1', true );
 	wp_enqueue_script( 'slick_slider', get_template_directory_uri() . '/js/slick.min.js', array(), '0.0.1', true );
 	wp_enqueue_script('scrollTop', '//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js', array(), true);
   	wp_enqueue_script( 'js', get_template_directory_uri() . '/js/logic.js', array(), '0.0.1', true );

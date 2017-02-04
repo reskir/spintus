@@ -11,37 +11,33 @@
 		a {
 			font-size: 25px;
 			color: $text-secondary;
-			&:hover {
-				 color: $text-primary;
-		 	}
+				&:hover {
+					color: $text-primary;
+				}
 		}
-		&.active {
-			a {
-			  color: $text-primary;
-		  	}
-		}
+			&.active {
+				a {
+					color: $text-primary;
+				}
+			}
    }  
 
   dd {
-	 display: none;
+	 visibility: hidden;
    font-size: 16px;
 	 margin:0;
-	 padding: 12px 24px 24px 12px;
 	 border-bottom: 2px solid $line-color;
-	 &.active {
-		 display: block;
-		 
-	 }
+	 opacity: 0;
+	 transform: translateX(20px);
+	 transition: opacity 0.9s ease, transform 0.7s ease;
+	 height:0;
+		&.active {
+				padding: 12px 24px 24px 12px;
+				height: auto;
+				visibility: visible;
+				opacity:1;
+				transform: translateX(0px);
+				
+			}
+  	}
   }
-
-  dd,dt {
-	&.active {
-		animation: bgChange 1s ease;
-	}
-  }
-}
-
-@keyframes bgChange {
-	0% { background: lighten($brand-red-color, 10%) }
-  100% { background: transparent; }
-}

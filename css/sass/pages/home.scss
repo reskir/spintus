@@ -14,6 +14,7 @@
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-size: cover;
+        background-attachment: fixed;
         min-width: 100%;
         min-height: 100%;
         display: flex;
@@ -60,4 +61,10 @@
     0% { opacity:0.6; transform: translateY(10px)}
     50% {opacity: 1; transform: translateY(0px)}
     100% {opacity: 0.6; transform: translateY(10px)}
+}
+
+.touch {
+    .hero {
+        background-attachment: scroll;
+    }
 }
