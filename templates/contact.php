@@ -15,31 +15,7 @@
                   </li>
                 </ul>
               </div>
-
-
-                    <?php
-                      // if the submit button is clicked, send the email
-                      if ( isset( $_POST['submit'] ) ) {
-                          add_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
-                          
-                          $to = 'kiril.abashkin@gmail.com';
-                          $subject = 'The subject';
-                          $body = 'The email body content';
-                          
-                          wp_mail( $to, $subject, $body );
-                          
-                          // Reset content-type to avoid conflicts -- https://core.trac.wordpress.org/ticket/23578
-                          remove_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
-                          
-                          function wpdocs_set_html_mail_content_type() {
-                              return 'text/html';
-                          }
-                        }
-                    ?>
-
-
-
-              <form method="post" class="form col-lg-12 col-md-12 col-sm-12 col-xs-12" required>
+              <form method="post" action = "<?php $_PHP_SELF ?>" class="form col-lg-12 col-md-12 col-sm-12 col-xs-12" required>
                 <fieldset>
                   <div class="row">
                     <h4 class="col-xs-12">Pasiteiraukite dėl savo projekto</h4>
@@ -103,14 +79,28 @@
                 </fieldset>
 
               </form>
-              
             </div>
-
-
           </div>
       </div>
-
-
-
   </div>
 </div>
+
+<?php
+  // if the submit button is clicked, send the email
+  if ( isset( $_POST['submit'] ) ) {
+      add_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
+      
+      $to = 'kiril.abashkin@gmail.com';
+      $subject = 'The subject';
+      $body = 'The email body content';
+      
+      wp_mail( $to, $subject, $body );
+      
+      // Reset content-type to avoid conflicts -- https://core.trac.wordpress.org/ticket/23578
+      remove_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
+      
+      function wpdocs_set_html_mail_content_type() {
+          return 'text/html';
+      }
+    }
+?>
