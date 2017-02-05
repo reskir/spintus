@@ -30,7 +30,7 @@
                 </div>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" >
-                <img src="http://spintus.lt/dev/wp-content/uploads/2017/01/kitchen-1-2.jpg" alt="" class="alignnone x--pv-l" style="width:100%" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/kitchen-sketch.jpg" alt="" class="alignnone x--pv-l" style="width:100%" />
               </div>
             </div>
 
