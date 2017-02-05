@@ -16,38 +16,35 @@
                 </ul>
               </div>
 
+
               <?php
-function send_my_awesome_form(){
 
-    if (!isset($_POST['submit'])) { return; }
+                            // if the submit button is clicked, send the email
+                            if ( isset( $_POST['submit'] ) ) {
 
-    // get the info from the from the form
-    $form = array();
-    $form['name'] = $_POST['name'];
-    $form['email'] = $_POST['email'];
-    $form['tel'] = $_POST['tel'];
+                                // sanitize form values
+                                $name    = sanitize_text_field( $_POST["name"] );
+                                $email   = sanitize_email( $_POST["email"] );
+                                $subject = sanitize_text_field( $_POST["tel"] );
+                                $message = esc_textarea( $_POST["message"] );
 
-    // Build the message
-    $message  = "Name :" . $form['name'] ."\n";
-    $message .= "Company :" . $form['email']  ."\n";
-    $message .= "Email :" . $form['tel']     ."\n";
+                                // get the blog administrator's email address
+                                $to = 'kiril.abashkin@gmail.com';
 
-    //set the form headers
-    $headers = 'From: Contact form <your@contactform.com>';
+                                $headers = "From: $name <$email>" . "\r\n";
 
-    // The email subject
-    $subject = 'you got mail';
-
-    // Who are we going to send this form too
-    $send_to = 'kiril.abashkin@gmail.com';
-
-    if (wp_mail( $send_to, $subject, $message, $headers ) ) {
-         wp_redirect(home_url()); exit;
-     }
-}
-
-            add_action('wp_head', 'send_my_awesome_form');
+                                // If email has been process for sending, display a success message
+                                if ( wp_mail( $to, $subject, $message, $headers ) ) {
+                                    echo '<div>';
+                                    echo '<p>Thanks for contacting me, expect a response soon.</p>';
+                                    echo '</div>';
+                                } else {
+                                    echo 'An unexpected error occurred';
+                                }
+                              }
               ?>
+
+
 
               <form method="post" action="" class="form col-lg-12 col-md-12 col-sm-12 col-xs-12" required>
                 <fieldset>
@@ -100,24 +97,16 @@ function send_my_awesome_form(){
                           </div>
                       </div>
                     </div>
-                     <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
-                      <h4>Komentaras</h4>
-                      <div class="input-group">
-                        <textarea class="input input--textarea" noresize required id="message" name="message"></textarea>
+                    <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
+                        <h4>Komentaras</h4>
+                        <div class="input-group">
+                          <textarea class="input input--textarea" noresize required id="message" name="message"></textarea>
+                        </div>
+                        <div>
+                          <button class="btn btn--success" name="submit" type="submit" id="submit">Bendrauti</button>
+                        </div>
                       </div>
-                      <div>
-                        <button class="btn btn--success" type="submit" id="submit">Bendrauti</button>
-                      </div>
-                    </div
-                  </div>
-                </fieldset>
-
-                <fieldset>
-                  <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     </div>
-
-                  </div>
                 </fieldset>
 
               </form>
@@ -132,3 +121,23 @@ function send_my_awesome_form(){
 
   </div>
 </div>
+
+      <?php
+          if(isset($_POST['submit'])){
+              add_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
+              
+              $to = 'kiril.abashkin@gmail.com';
+              $name = $_POST['name'];
+              $subject = 'The subject';
+              $body = 'The email body content';
+              
+              wp_mail( $to, $subject, $body );
+              
+              // Reset content-type to avoid conflicts -- https://core.trac.wordpress.org/ticket/23578
+              remove_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
+              
+              function wpdocs_set_html_mail_content_type() {
+                  return 'text/html';
+              }
+          }
+      ?>
