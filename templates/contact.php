@@ -72,7 +72,7 @@
                           <textarea class="input input--textarea" noresize required id="message" name="message"></textarea>
                         </div>
                         <div>
-                          <button class="btn btn--success" name="submit" type="submit" id="submit">Bendrauti</button>
+                          <button class="btn btn--success" name="submit" type="submit" id="submit" value="submit">Bendrauti</button>
                         </div>
                       </div>
                     </div>
@@ -87,6 +87,7 @@
 
 <?php
   // if the submit button is clicked, send the email
+  if ( isset( $_POST['submit'] ) ) {
       add_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
       
       $to = 'kiril.abashkin@gmail.com';
@@ -101,4 +102,5 @@
       function wpdocs_set_html_mail_content_type() {
           return 'text/html';
       }
+    }
 ?>
