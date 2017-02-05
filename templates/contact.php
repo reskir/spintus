@@ -87,7 +87,6 @@
 
 <?php
   // if the submit button is clicked, send the email
-  if ( isset( $_POST['submit'] ) ) {
       add_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
       
       $to = 'kiril.abashkin@gmail.com';
@@ -102,5 +101,4 @@
       function wpdocs_set_html_mail_content_type() {
           return 'text/html';
       }
-    }
 ?>
