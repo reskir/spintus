@@ -18,45 +18,19 @@
 
 
                     <?php
-
-                      function debug_to_console( $data ) {
-
-                          if ( is_array( $data ) )
-                              $output = "<script>console.log( 'Debug Objects: " . implode( ',', $data) . "' );</script>";
-                          else
-                              $output = "<script>console.log( 'Debug Objects: " . $data . "' );</script>";
-
-                          echo $output;
-                      }
                       // if the submit button is clicked, send the email
                       if ( isset( $_POST['submit'] ) ) {
-
-
-
                           add_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
-
-
-                          // sanitize form values
-                          $name    = sanitize_text_field( $_POST["name"] );
-                          $email   = sanitize_email( $_POST["email"] );
-                          $subject = sanitize_text_field( $_POST["tel"] );
-                          $message = esc_textarea( $_POST["message"] );
-                          debug_to_console($name, $email, $subject, $message);
+                          
                           $to = 'kiril.abashkin@gmail.com';
-
-                          $headers = "From: $name <$email>" . "\r\n";
-
-                          // If email has been process for sending, display a success message
-                          if ( wp_mail( $to, $subject, $message, $headers ) ) {
-                              echo '<div>';
-                              echo '<p>Thanks for contacting me, expect a response soon.</p>';
-                              echo '</div>';
-                          } else {
-                              echo 'An unexpected error occurred';
-                          }
-
+                          $subject = 'The subject';
+                          $body = 'The email body content';
+                          
+                          wp_mail( $to, $subject, $body );
+                          
+                          // Reset content-type to avoid conflicts -- https://core.trac.wordpress.org/ticket/23578
                           remove_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
-
+                          
                           function wpdocs_set_html_mail_content_type() {
                               return 'text/html';
                           }
