@@ -85,7 +85,7 @@
  var $ = jQuery;
 
  var setHeight = function(){
-   $('.hero').height(window.innerHeight - ($('.header').height()+24));
+   $('.hero').height(window.innerHeight - ($('.header').height()));
  }
  setHeight()
 
@@ -94,8 +94,6 @@
       setHeight()
     }
 });
-
-console.log($('.header').height())
 
  $('.hero__scroll').click(function() {
     $('body,html').animate({scrollTop: $('.hero').height()}, 600); 
