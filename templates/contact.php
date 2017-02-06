@@ -21,12 +21,13 @@
                  // if the submit button is clicked, send the email
                     if(isset($_POST['submit'])) {
                           $to = 'kiril.abashkin@gmail.com';
-                          $name = sanitize_text_field($_POST['name']);
+                          $client_name = sanitize_text_field($_POST['client_name']);
                           $email = sanitize_email($_POST['email']);
                           $telephone = sanitize_text_field($_POST['tel']);
-                          $subject = 'Jums rašo ' . $email;
+                          $subject = 'Jums rašo ' . $client_name . $telephone;
                           $message = sanitize_text_field($_POST['message']);
-                          $headers = "From: " . $email;
+                          $headers[] = $email;
+                          $headers[] = $to;
                           wp_mail( $to, $subject, $message, $headers );
                     }                                    
                 ?>
@@ -35,15 +36,15 @@
                   <div class="row">
                     <h4 class="col-xs-12">Pasiteiraukite dėl savo projekto</h4>
                     <div class="input-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                      <input class="input" type="text" id="name" name="name" />
-                      <label class="label" id="name" for="name">Vardas</label>
+                      <input class="input" type="text" id="client_name" client_name="client_name" required />
+                      <label class="label" id="client_name" for="client_name">Vardas</label>
                     </div>
                     <div class="input-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                      <input class="input" type="email" id="email" name="email" />
+                      <input class="input" type="email" id="email" name="email" required />
                       <label class="label" id="email" for="email">El.paštas</label>
                     </div>
                     <div class="input-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                      <input class="input" type="tel" id="tel" name="tel" />
+                      <input class="input" type="tel" id="tel" name="tel" required />
                       <label class="label" id="tel" for="tel">Telefono numeris</label>
                     </div>
                   </div>
