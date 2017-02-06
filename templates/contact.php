@@ -21,10 +21,10 @@
                  // if the submit button is clicked, send the email
                     if(isset($_POST['submit'])) {
                           $to = 'kiril.abashkin@gmail.com';
-                          $client_name = sanitize_text_field($_POST['client_name']);
+                          $clientname = sanitize_text_field($_POST['client_name']);
                           $email = sanitize_email($_POST['email']);
                           $telephone = sanitize_text_field($_POST['tel']);
-                          $subject = 'Jums rašo ' . $client_name;
+                          $subject = 'Jums rašo ' . $clientname;
                           $message = sanitize_text_field($_POST['message']);
                           $headers[] = 'From: ' . $to;
                           $headers[] = 'Cc: ' . $email;
@@ -37,7 +37,7 @@
                   <div class="row">
                     <h4 class="col-xs-12">Pasiteiraukite dėl savo projekto</h4>
                     <div class="input-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                      <input class="input" type="text" id="client_name" client_name="client_name" required />
+                      <input class="input" type="text" id="client_name" name="client_name" required />
                       <label class="label" id="client_name" for="client_name">Vardas</label>
                     </div>
                     <div class="input-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
