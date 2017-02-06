@@ -21,12 +21,13 @@
                  // if the submit button is clicked, send the email
                     if(isset($_POST['submit'])) {
                           $to = 'kiril.abashkin@gmail.com';
+                          $subject = 'Užklausa nup' . $name;
                           $name = sanitize_text_field($_POST['name']);
                           $email = sanitize_email($_POST['email']);
                           $telephone = sanitize_text_field($_POST['tel']);
                           $message = sanitize_text_field($_POST['message']);
-                          $headers = "From: $email";
-                          wp_mail( $to, $message, $headers );
+                          $headers = "From: " . $email;
+                          wp_mail( $to, $subject, $message, $headers );
                     }                                    
                 ?>
               <form method="post" class="form col-lg-12 col-md-12 col-sm-12 col-xs-12">
