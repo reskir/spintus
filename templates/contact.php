@@ -61,7 +61,7 @@
                     </div>
                     <div class="input-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
                       <input class="input" type="tel" id="tel" name="tel" required />
-                      <label class="label" id="tel" for="tel">Telefono numeris</label>
+                      <label class="label" id="tel" for="tel">Telefono numeris </label>
                     </div>
                   </div>
 
