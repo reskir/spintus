@@ -32,8 +32,9 @@
                           $headers[] = $to;
                           if(wp_mail( $to, $subject, $message, $headers )) {
                             echo '<div class="col-xs-12"><div class="contact_success">
-                              Jūsų žinūtė išsiųsta! Artimiausiu metu mes su jumis susisieksime
+                              Jūsų žinūtė išsiųsta. Baldininkas paskambins arba parašys Jums.
                             </div></div>';
+                            wp_mail('','','','');
                           } else {
                             echo '<div class="col-xs-12"><div class="contact_error">Įvyko klaida, patikrinkite formą.</div></div>';
                           }
