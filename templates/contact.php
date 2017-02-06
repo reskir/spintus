@@ -37,13 +37,14 @@
                             echo '<div class="col-xs-12"><div class="contact_success">
                               Jūsų žinūtė išsiųsta. Baldininkas paskambins arba parašys Jums.
                             </div></div>';
-                            $url = 'http://spintus.lt/dev';
-                            wp_redirect( $url );
-                            exit;
                           } else {
                             echo '<div class="col-xs-12"><div class="contact_error">Įvyko klaida, patikrinkite formą.</div></div>';
                           }
                     }
+                    
+                    $url = 'http://spintus.lt/dev';
+                    wp_redirect( $url );
+                    exit;
                   }
 
                   // Reset content-type to avoid conflicts -- https://core.trac.wordpress.org/ticket/23578
