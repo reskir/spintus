@@ -20,12 +20,12 @@
                 <?php
                  // if the submit button is clicked, send the email
                     if(isset($_POST['submit'])) {
-                          $to = 'kiril.abashkin@gmail.com';
+                          $to = get_bloginfo('admin_email');
                           $clientname = sanitize_text_field($_POST['client_name']);
                           $email = sanitize_email($_POST['email']);
                           $telephone = sanitize_text_field($_POST['tel']);
-                          $subject = 'Jums rašo ' . $clientname;
-                          $message = 'Telefono numeris '.$telephone.sanitize_text_field($_POST['message']);
+                          $subject = 'Spintus.lt užklausa dėl baldų nuo ' . $clientname;
+                          $message = 'Telefono numeris '.$telephone.'\r\n'.sanitize_text_field($_POST['message']);
                           $headers[] = 'From: ' . $email;
                           $headers[] = 'Cc: ' . $email;
                           $headers[] = $to;
