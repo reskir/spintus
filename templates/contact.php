@@ -22,10 +22,10 @@
                  // if the submit button is clicked, send the email
                  if(isset($_POST['submit'])) {
                        $to = 'kiril.abashkin@gmail.com';
-                       $name = sanitize_text_field(($_POST['name']));
-                       $body = sanitize_text_field(($_POST['message']));
+                       $name = sanitize_text_field($_POST['name']);
+                       $body = sanitize_text_field($_POST['message']);
                        wp_mail( $to, $name, $body );
-                     }
+                }
                                       
                        // Reset content-type to avoid conflicts -- https://core.trac.wordpress.org/ticket/23578
                        remove_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
