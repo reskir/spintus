@@ -9,9 +9,10 @@
               </div>
               <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 first-xs">
                 <div class="x--ph-l">
-                  <h2> Meilė baldams </h2>
+                  <h2> Nuo matavimo iki montavimo </h2>
                   <p>
-                    Čia reikėtų info apie procesus, baldų gamyba, Iljos istorija, nuo ko jis pradėjo gaminti, kodėl klientai pasirenka būtent jį
+                    Baldininkas paruoš projektą pagal jūsų poreikius ir gyvenimo būdą, suplanuos erdvė ir pagamins baldus atitinkančius jums.
+
                   </p>
                 </div>
               </div>
@@ -24,13 +25,12 @@
                 <div class="x--ph-l">
                   <h2> Kokybė ir kruopštumas </h2>
                   <p>
-                     Dėl kokių detalių verta rinktis Iljos baldus ( o ne ikea), kodėl efektyvu dirbti su baldininkų, 
-                     kokia kokybę jis gali pasiūlyti (palyginus su kitom alternativom)
+                    Kiek daug smulkmenų turi įtakos gyvenimo kokybei ir komfortui. Baldai neatsiejamai yra tapatinami su tuo. Mes ne tik įrenginėjam jūsų erdvė, bet ir sukuriam baldus su integruotu apšvietimu, funkcionaliu dizainu iš ilgaamžiškų ir naturalių medžiagų.
                   </p>
                 </div>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" >
-                <img src="<?php echo get_template_directory_uri(); ?>/images/kitchen-sketch.jpg" alt="" class="alignnone x--pv-l" style="width:100%" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/kitchen-sketch.png" alt="" class="alignnone x--pv-l" style="width:100%" />
               </div>
             </div>
 

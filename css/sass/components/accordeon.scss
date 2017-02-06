@@ -4,11 +4,10 @@
 		&--mobile {
 			display: none;
 		}
-
 		@media screen and (max-width:800px) {
 			&--mobile {
 				display: block;
-				height: 500px;
+				max-height: 500px;
 			}
 			&--desktop {
 				display: none;
@@ -20,7 +19,7 @@
 	   font-family: $headings-fonts;
 	   font-weight: normal;
 	   margin: 24px 0 0 0;
-		 padding: 12px;
+	   padding: 12px;
 	   display: flex;
 	   align-items: baseline;
 
@@ -40,7 +39,8 @@
 
   dd {
 	 visibility: hidden;
-   font-size: 16px;
+	 overflow: hidden;
+   	 font-size: 16px;
 	 margin:0;
 	 border-bottom: 2px solid $line-color;
 	 opacity: 0;
