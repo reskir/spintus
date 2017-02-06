@@ -24,9 +24,10 @@
                           $client_name = sanitize_text_field($_POST['client_name']);
                           $email = sanitize_email($_POST['email']);
                           $telephone = sanitize_text_field($_POST['tel']);
-                          $subject = 'Jums rašo ' . $client_name . $telephone;
+                          $subject = 'Jums rašo ' . $client_name;
                           $message = sanitize_text_field($_POST['message']);
-                          $headers[] = $email;
+                          $headers[] = 'From: ' . $to;
+                          $headers[] = 'Cc: ' . $email;
                           $headers[] = $to;
                           wp_mail( $to, $subject, $message, $headers );
                     }                                    
