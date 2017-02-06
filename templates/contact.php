@@ -35,11 +35,6 @@
                             echo '<div class="col-xs-12"><div class="contact_success">
                               Jūsų žinūtė išsiųsta. Baldininkas paskambins arba parašys Jums.
                             </div></div>';
-                            ob_start();
-                              $url = 'http://spintus.lt/dev';
-                              wp_redirect( $url );
-                              exit;
-                            ob_clean();
                           } else {
                             echo '<div class="col-xs-12"><div class="contact_error">Įvyko klaida, patikrinkite formą.</div></div>';
                           }
