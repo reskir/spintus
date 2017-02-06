@@ -35,7 +35,7 @@
                               Jūsų žinūtė išsiųsta. Baldininkas paskambins arba parašys Jums.
                             </div></div>';
                             $redirect = site_url()/success;
-                            wp_redirect( $url );
+                            wp_redirect( $redirect );
                             exit;
                           } else {
                             echo '<div class="col-xs-12"><div class="contact_error">Įvyko klaida, patikrinkite formą.</div></div>';
