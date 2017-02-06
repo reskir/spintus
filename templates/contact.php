@@ -20,13 +20,13 @@
                 <?php
                 add_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
                  // if the submit button is clicked, send the email
-                    if(isset($_POST['submit']) && ($_POST['name']) !== '' ) {
+                    if(isset($_POST['submit']) && ($_POST['name']) !== '' && ($_POST['email']) !== '' && ($_POST['message']) !== '' ) {
                           $to = get_bloginfo('admin_email');
                           $clientname = sanitize_text_field($_POST['client_name']);
                           $email = sanitize_email($_POST['email']);
                           $telephone = sanitize_text_field($_POST['tel']);
                           $subject = 'Spintus.lt užklausa dėl baldų nuo ' . $clientname;
-                          $message = 'Telefono numeris '.$telephone.'<br />'.sanitize_text_field($_POST['message']);
+                          $message = 'Telefono numeris: '.$telephone.'<br /> Žinutė: '.sanitize_text_field($_POST['message']);
                           $headers[] = 'From: ' . $email;
                           $headers[] = 'Cc: ' . $email;
                           $headers[] = $to;
