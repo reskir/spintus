@@ -22,8 +22,8 @@
                  // if the submit button is clicked, send the email
                  if(isset($_POST['submit'])) {
                        $to = 'kiril.abashkin@gmail.com';
-                       $name = ($_POST['name']);
-                       $body = ($_POST['message']);
+                       $name = sanitize_text_field(($_POST['name']));
+                       $body = sanitize_text_field(($_POST['message']));
                        wp_mail( $to, $name, $body );
                      }
                                       
