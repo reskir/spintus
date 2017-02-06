@@ -6,11 +6,11 @@
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <ul class="contact_info x--p-l">
                   <li>Ilja Sapožnikov</li>
-                  <li>LT 70001 4565454 123213 Swedbank</li>
-                  <li>Ulonų g. 5a, Vilnius</li>
+                  <li><?php echo get_option('bank_acc'); ?></li>
+                  <li><?php echo get_option('address'); ?></li>
                   <li>
                     <strong>
-                      <a href="tel:+37060507073">+370 60507073</a>
+                      <a href="tel:<?php echo str_replace('/\s+/', ' ', get_option('telephone')); ?>"><?php echo get_option('telephone'); ?></a>
                     </strong>
                   </li>
                 </ul>

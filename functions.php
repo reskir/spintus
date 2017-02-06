@@ -64,12 +64,31 @@ function setting_github() { ?>
 			<input type="text" name="github" id="github" value="<?php echo get_option('github'); ?>" />
 			<?php }
 
+function setting_telephone() { ?>
+			<input type="tel" name="telephone" id="telephone" value="<?php echo get_option('telephone'); ?>" />
+			<?php }
+
+function setting_address() { ?>
+			<input type="text" name="address" id="address" value="<?php echo get_option('address'); ?>" />
+			<?php }
+
+function setting_bank_account() { ?>
+			<input type="text" name="bank_acc" id="bank_acc" value="<?php echo get_option('bank_acc'); ?>" />
+			<?php }
+
 function custom_settings_page_setup() {
   add_settings_section('section', 'All Settings', null, 'theme-options');
   add_settings_field('twitter', 'Twitter URL', 'setting_twitter', 'theme-options', 'section');
   add_settings_field('github', 'GitHub URL', 'setting_github', 'theme-options', 'section');
+  add_settings_field('telephone', 'Telephone number', 'setting_telephone', 'theme-options', 'section');
+  add_settings_field('address', 'Address', 'setting_address', 'theme-options', 'section');
+  add_settings_field('bank_acc', 'Bank Account', 'setting_bank_account', 'theme-options', 'section');
+
   register_setting('section', 'twitter');
   register_setting('section', 'github');
+  register_setting('section', 'telephone');
+  register_setting('section', 'address');
+  register_setting('section', 'bank_acc');
 }
 add_action( 'admin_init', 'custom_settings_page_setup' );
 

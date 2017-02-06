@@ -63,12 +63,12 @@
               <dt><a href="">Baldų gaminimo laikas?</a></dt>
               <dd class="col-xs-12 col-md-10 col-sm-12 col-lg-8 start-xs">
                 <p>Baldų pagaminimo laikas gali trūkti nuo 1 iki 2 mėnesių, priklauso nuo sudėtingumo ir apimties.
-                Tam, kad tiksliau įvertinti gaminimo laiką <a href="tel:+37060507073">paskambinkite mums</a> arba užpildykite <a href="<?php echo site_url(); ?>/kontaktai"> formą </a>.</p>
+                Tam, kad tiksliau įvertinti gaminimo laiką <a href="tel:<?php echo get_option('telephone'); ?>">paskambinkite mums</a> arba užpildykite <a href="<?php echo site_url(); ?>/kontaktai"> formą </a>.</p>
               </dd>
 
               <dt><a href="">Kaip padaryti užsakymą?</a></dt>
               <dd class="col-xs-12 col-md-10 col-sm-12 col-lg-8 start-xs">
-                <a href="tel:+37060507073">Paskambinkite mums</a> arba užpildykite <a href="<?php echo site_url(); ?>/kontaktai"> formą </a> mūsų puslapyje.
+                <a href="tel:<?php echo get_option('telephone'); ?>">Paskambinkite mums</a> arba užpildykite <a href="<?php echo site_url(); ?>/kontaktai"> formą </a> mūsų puslapyje.
               </dd>
 
 
