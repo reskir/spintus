@@ -25,8 +25,8 @@
                           $email = sanitize_email($_POST['email']);
                           $telephone = sanitize_text_field($_POST['tel']);
                           $subject = 'Jums rašo ' . $clientname;
-                          $message = sanitize_text_field($_POST['message']);
-                          $headers[] = 'From: ' . $to;
+                          $message = 'Telefono numeris '.$telephone.sanitize_text_field($_POST['message']);
+                          $headers[] = 'From: ' . $email;
                           $headers[] = 'Cc: ' . $email;
                           $headers[] = $to;
                           wp_mail( $to, $subject, $message, $headers );
