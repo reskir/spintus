@@ -18,7 +18,6 @@
 
               
                 <?php
-                ob_start();
                 // add_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
                  // if the submit button is clicked, send the email
                  add_action ('wp_loaded', 'my_custom_redirect');
@@ -38,14 +37,13 @@
                             echo '<div class="col-xs-12"><div class="contact_success">
                               Jūsų žinūtė išsiųsta. Baldininkas paskambins arba parašys Jums.
                             </div></div>';
+                            $url = 'http://spintus.lt/dev';
+                            wp_redirect( $url );
+                            exit;
                           } else {
                             echo '<div class="col-xs-12"><div class="contact_error">Įvyko klaida, patikrinkite formą.</div></div>';
                           }
                     }
-
-                    $url = 'http://spintus.lt/dev';
-                    wp_redirect( $url );
-                    exit;
                   }
 
                   // Reset content-type to avoid conflicts -- https://core.trac.wordpress.org/ticket/23578
@@ -53,8 +51,7 @@
                   
                   // function wpdocs_set_html_mail_content_type() {
                   //     return 'text/html';
-                  // }
-                ob_clean();                                  
+                  // }                            
                 ?>
               <form method="post" class="form col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <fieldset>
