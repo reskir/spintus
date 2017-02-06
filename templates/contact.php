@@ -20,6 +20,7 @@
                 <?php
                 // add_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
                  // if the submit button is clicked, send the email
+                    ob_start();
                     if(isset($_POST['submit']) && ($_POST['name']) !== '' && ($_POST['email']) !== '' && ($_POST['message']) !== '' ) {
                           $to = get_bloginfo('admin_email');
                           $clientname = sanitize_text_field($_POST['client_name']);
