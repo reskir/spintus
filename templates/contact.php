@@ -18,7 +18,7 @@
 
               
                 <?php
-                add_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
+                // add_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
                  // if the submit button is clicked, send the email
                     if(isset($_POST['submit']) && ($_POST['name']) !== '' && ($_POST['email']) !== '' && ($_POST['message']) !== '' ) {
                           $to = get_bloginfo('admin_email');
@@ -44,11 +44,11 @@
                     }
 
                   // Reset content-type to avoid conflicts -- https://core.trac.wordpress.org/ticket/23578
-                  remove_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
+                  // remove_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
                   
-                  function wpdocs_set_html_mail_content_type() {
-                      return 'text/html';
-                  }                                    
+                  // function wpdocs_set_html_mail_content_type() {
+                  //     return 'text/html';
+                  // }                                    
                 ?>
               <form method="post" class="form col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <fieldset>
