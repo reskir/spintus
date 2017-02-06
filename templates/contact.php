@@ -31,8 +31,10 @@
                           $headers[] = 'Cc: ' . $email;
                           $headers[] = $to;
                           if(wp_mail( $to, $subject, $message, $headers )) {
-                            echo '<div>Jūsų žinūtė išsiųsta</div>';
-                          };
+                            echo '<div class="col-xs-12 contact_success">Jūsų žinūtė išsiųsta! Artimiausiu metu mes su jumis susisieksime</div>';
+                          } else {
+                            echo '<div class="col-xs-12 contact_error">Įvyko klaida, patikrinkite formą.</div>';
+                          }
                     }
                   // Reset content-type to avoid conflicts -- https://core.trac.wordpress.org/ticket/23578
                   remove_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );

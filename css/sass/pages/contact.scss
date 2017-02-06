@@ -26,6 +26,14 @@
       font-size: $base-font-size;
     }
 
+    &_success {
+        border: 1px solid $contant-success-border;
+    }
+
+    &_error {
+        border: 1px solid $contact-error-border;
+    }
+
     .input-group {
         display: flex;
         position: relative;
