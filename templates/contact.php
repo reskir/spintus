@@ -18,8 +18,10 @@
 
               
                 <?php
+                add_action ('wp_loaded', 'my_custom_redirect');
                 add_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
                  // if the submit button is clicked, send the email
+                  function my_custom_redirect() {
                     if(isset($_POST['submit']) && ($_POST['name']) !== '' && ($_POST['email']) !== '' && ($_POST['message']) !== '' ) {
                           $to = get_bloginfo('admin_email');
                           $clientname = sanitize_text_field($_POST['client_name']);
@@ -37,10 +39,11 @@
                           } else {
                             echo '<div class="col-xs-12"><div class="contact_error">Įvyko klaida, patikrinkite formą.</div></div>';
                           }
-                            $redirect = site_url();
+                            $redirect = 'http://spintus.lt/dev';
                             wp_redirect( $redirect );
                             exit;
                     }
+                  }
                   // Reset content-type to avoid conflicts -- https://core.trac.wordpress.org/ticket/23578
                   remove_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
                   
