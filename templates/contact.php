@@ -31,9 +31,11 @@
                           $headers[] = 'Cc: ' . $email;
                           $headers[] = $to;
                           if(wp_mail( $to, $subject, $message, $headers )) {
-                            echo '<div class="col-xs-12 contact_success">Jūsų žinūtė išsiųsta! Artimiausiu metu mes su jumis susisieksime</div>';
+                            echo '<div class="col-xs-12"><div class="contact_success">
+                              Jūsų žinūtė išsiųsta! Artimiausiu metu mes su jumis susisieksime
+                            </div></div>';
                           } else {
-                            echo '<div class="col-xs-12 contact_error">Įvyko klaida, patikrinkite formą.</div>';
+                            echo '<div class="col-xs-12"><div class="contact_error">Įvyko klaida, patikrinkite formą.</div></div>';
                           }
                     }
                   // Reset content-type to avoid conflicts -- https://core.trac.wordpress.org/ticket/23578
