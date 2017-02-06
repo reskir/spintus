@@ -10,7 +10,7 @@
                   <li><?php echo get_option('address'); ?></li>
                   <li>
                     <strong>
-                      <a href="tel:<?php echo str_replace('/\s+/', ' ', get_option('telephone')); ?>"><?php echo get_option('telephone'); ?></a>
+                      <a href="tel:<?php echo get_option('telephone'); ?>"><?php echo get_option('telephone'); ?></a>
                     </strong>
                   </li>
                 </ul>
@@ -20,7 +20,6 @@
                 <?php
                 // add_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
                  // if the submit button is clicked, send the email
-                    ob_start();
                     if(isset($_POST['submit']) && ($_POST['name']) !== '' && ($_POST['email']) !== '' && ($_POST['message']) !== '' ) {
                           $to = get_bloginfo('admin_email');
                           $clientname = sanitize_text_field($_POST['client_name']);
