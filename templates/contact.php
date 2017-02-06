@@ -18,12 +18,12 @@
 
               
                 <?php
-                // if the submit button is clicked, send the email
+                  // if the submit button is clicked, send the email
                   if(isset($_POST['submit'])) {
                       echo '<div>Submit</div>';
                   }
                 ?>
-              <form method="post" class="form col-lg-12 col-md-12 col-sm-12 col-xs-12" required>
+              <form method="post" class="form col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <fieldset>
                   <div class="row">
                     <h4 class="col-xs-12">Pasiteiraukite dėl savo projekto</h4>
