@@ -5,7 +5,7 @@
          <div class="info main">
             <div class="row middle-xs home_block">
               <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 first-lg first-md first-sm" >
-                <img src="http://spintus.lt/dev/wp-content/uploads/2016/10/kitchen-1-1024x683.jpg" alt="" class="alignnone x--pv-l" style="width:100%;" />
+                <img src="<?php echo get_template_directory_uri();?>/images/bg-8.jpg" alt="Virtuvė - 1" class="alignnone x--pv-l" style="width:100%;" />
               </div>
               <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 first-xs">
                 <div class="x--ph-l">
@@ -30,7 +30,7 @@
                 </div>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" >
-                <img src="<?php echo get_template_directory_uri();?>/images/kitchen-sketch.png" alt="" class="alignnone x--pv-l" style="width:100%" />
+                <img src="<?php echo get_template_directory_uri();?>/images/kitchen-sketch.png" alt="Virtuvė - 2" class="alignnone x--pv-l" style="width:100%" />
               </div>
             </div>
 
