@@ -30,7 +30,9 @@
                           $headers[] = 'From: ' . $email;
                           $headers[] = 'Cc: ' . $email;
                           $headers[] = $to;
-                          wp_mail( $to, $subject, $message, $headers );
+                          if(wp_mail( $to, $subject, $message, $headers )) {
+                            echo '<div>Jūsų žinūtė išsiųsta</div>';
+                          };
                     }
                   // Reset content-type to avoid conflicts -- https://core.trac.wordpress.org/ticket/23578
                   remove_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
@@ -93,7 +95,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
                         <h4>Komentaras</h4>
                         <div class="input-group">
-                          <textarea class="input input--textarea" noresize id="message" name="message"></textarea>
+                          <textarea class="input input--textarea" noresize id="message" name="message" required></textarea>
                         </div>
                         <div>
                           <input  class="btn btn--success" name="submit" type="submit" value="Bendrauti" />
