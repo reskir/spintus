@@ -19,19 +19,8 @@
               
                 <?php
                 // if the submit button is clicked, send the email
-                if(isset($_POST['submit'])) {
-                      add_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
-                      $to = 'kiril.abashkin@gmail.com';
-                      $subject = 'The subject';
-                      $body = 'The email body content';
-                      wp_mail( $to, $subject, $body );
-                      
-                      // Reset content-type to avoid conflicts -- https://core.trac.wordpress.org/ticket/23578
-                      remove_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
-                      
-                      function wpdocs_set_html_mail_content_type() {
-                          return 'text/html';
-                      }
+                  if(isset($_POST['submit'])) {
+                      echo '<div>Submit</div>';
                   }
                 ?>
               <form method="post" class="form col-lg-12 col-md-12 col-sm-12 col-xs-12" required>
@@ -91,7 +80,7 @@
                           <textarea class="input input--textarea" noresize required id="message" name="message"></textarea>
                         </div>
                         <div>
-                          <button class="btn btn--success" name="submit" type="submit" value="Submit">Bendrauti</button>
+                          <input  class="btn btn--success" name="submit" type="submit" value="Bendrauti" />
                         </div>
                       </div>
                     </div>
@@ -99,7 +88,7 @@
 
               </form>
 
-              
+
             </div>
           </div>
       </div>

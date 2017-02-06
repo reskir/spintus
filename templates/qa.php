@@ -1,12 +1,12 @@
 <div class="main-content">
   <div class="page" id="<?php the_title(); ?>">
       <div class="bp-header cf about row start-xs">
-        	<div class="info col-xs-12 col-md-10 col-sm-12 col-lg-8 start-xs">
+        	<div class="info col-xs-12 col-md-12 col-sm-12 col-lg-12">
             <h3> Dažniausiai užduodami klausimai </h3>
             <dl class="accordion">
 
               <dt><a href="">Kiek kainuoja pagaminti baldus?</a></dt>
-              <dd>
+              <dd class="col-xs-12 col-md-10 col-sm-12 col-lg-8 start-xs">
                 <p>Kainos priklauso nuo projekto sudėtingumo ir papildomų reikalavimų. Kainoms taip pat turi įtakos medžiagos, plotis ir kita.</p>
                 <table class="table">
                   <colgroup>
@@ -52,20 +52,23 @@
               </dd>
 
               <dt ><a href="">Kaip mes dirbame?</a></dt>
-              <dd>Iš pradžių mes susitinkame su klientu ir išsiaiškiname kuo mes galėtume jam padėti. Aptarimo metu...</dd>
+              <dd class="col-xs-12 start-xs">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/prototype.svg" class="accordion_prototype--desktop" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/prototype-mobile.svg" class="accordion_prototype--mobile" />
+              </dd>
 
               <dt><a href="">Garantinis aptarnavimas</a></dt>
-              <dd>Parašyti kažką apie garantinį</dd>
+              <dd class="col-xs-12 col-md-10 col-sm-12 col-lg-8 start-xs">Mūsų gaminiams ir jų montavimui skiriama <strong>1 metų garantija</strong>.</dd>
 
               <dt><a href="">Baldų gaminimo laikas?</a></dt>
-              <dd>Kiek užtrunka pagaminti baldus</dd>
-
-              <dt><a href="">Mūsų darbo procesas</a></dt>
-              <dd>Parodyti arba išaiškinti darbo procesą</dd>
+              <dd class="col-xs-12 col-md-10 col-sm-12 col-lg-8 start-xs">
+                <p>Baldų pagaminimo laikas gali trūkti nuo vieno iki dviejų mėnesių, priklauso nuo sudėtingumo ir apimties.
+                Tam, kad tiksliau įvertinti gaminimo laiką <a href="tel:+37060507073">paskambinkite mums</a> arba užpildykite <a href="<?php echo site_url(); ?>/kontaktai"> formą </a>.</p>
+              </dd>
 
               <dt><a href="">Kaip padaryti užsakymą?</a></dt>
-              <dd>
-                Paskambinkite arba užpildykite <a href="<?php echo site_url(); ?>/kontaktai"> formą </a> mūsų puslapyje.
+              <dd class="col-xs-12 col-md-10 col-sm-12 col-lg-8 start-xs">
+                <a href="tel:+37060507073">Paskambinkite mums</a> arba užpildykite <a href="<?php echo site_url(); ?>/kontaktai"> formą </a> mūsų puslapyje.
               </dd>
 
 
