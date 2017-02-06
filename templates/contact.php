@@ -30,13 +30,13 @@
                           $headers[] = 'From: ' . $email;
                           $headers[] = 'Cc: ' . $email;
                           $headers[] = $to;
-                          
+
                           if(wp_mail( $to, $subject, $message, $headers )) {
                             echo '<div class="col-xs-12"><div class="contact_success">
                               Jūsų žinūtė išsiųsta. Baldininkas paskambins arba parašys Jums.
                             </div></div>';
-                            $redirect = 'http://spintus.lt/dev';
-                            wp_redirect( $redirect );
+                            $url = 'http://spintus.lt/dev';
+                            wp_url( $redirect );
                             exit;
                           } else {
                             echo '<div class="col-xs-12"><div class="contact_error">Įvyko klaida, patikrinkite formą.</div></div>';
