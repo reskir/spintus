@@ -36,14 +36,15 @@
                             echo '<div class="col-xs-12"><div class="contact_success">
                               Jūsų žinūtė išsiųsta. Baldininkas paskambins arba parašys Jums.
                             </div></div>';
-                          } else {
-                            echo '<div class="col-xs-12"><div class="contact_error">Įvyko klaida, patikrinkite formą.</div></div>';
-                          }
                             $redirect = 'http://spintus.lt/dev';
                             wp_redirect( $redirect );
                             exit;
+                          } else {
+                            echo '<div class="col-xs-12"><div class="contact_error">Įvyko klaida, patikrinkite formą.</div></div>';
+                          }
                     }
                   }
+                  
                   // Reset content-type to avoid conflicts -- https://core.trac.wordpress.org/ticket/23578
                   remove_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
                   
