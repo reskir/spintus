@@ -18,22 +18,16 @@
 
               
                 <?php
-               add_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
                  // if the submit button is clicked, send the email
-                 if(isset($_POST['submit'])) {
-                       $to = 'kiril.abashkin@gmail.com';
-                       $name = sanitize_text_field($_POST['name']);
-                       $body = sanitize_text_field($_POST['message']);
-                       wp_mail( $to, $name, $body );
-                }
-                                      
-                       // Reset content-type to avoid conflicts -- https://core.trac.wordpress.org/ticket/23578
-                       remove_filter( 'wp_mail_content_type', 'wpdocs_set_html_mail_content_type' );
-                       
-                       function wpdocs_set_html_mail_content_type() {
-                           return 'text/html';
-                       }
-
+                    if(isset($_POST['submit'])) {
+                          $to = 'kiril.abashkin@gmail.com';
+                          $name = sanitize_text_field($_POST['name']);
+                          $email = sanitize_email($_POST['email']);
+                          $telephone = sanitize_text_field($_POST['tel']);
+                          $message = sanitize_text_field($_POST['message']);
+                          $headers = "From: $email";
+                          wp_mail( $to, $message, $headers );
+                    }                                    
                 ?>
               <form method="post" class="form col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <fieldset>
