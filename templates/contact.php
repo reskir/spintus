@@ -22,9 +22,9 @@
                  // if the submit button is clicked, send the email
                  if(isset($_POST['submit'])) {
                        $to = 'kiril.abashkin@gmail.com';
-                       $subject = 'The subject';
-                       $body = 'The email body content';
-                       wp_mail( $to, $subject, $body );
+                       $name = ($_POST['name']);
+                       $body = ($_POST['message']);
+                       wp_mail( $to, $name, $body );
                      }
                                       
                        // Reset content-type to avoid conflicts -- https://core.trac.wordpress.org/ticket/23578
