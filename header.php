@@ -8,7 +8,9 @@
 	<title>
 		<?php wp_title( '-', true, 'right' ); ?>
 	</title>
-	<link rel='shortcut icon' type='image/x-icon' href='<?php echo get_template_directory_uri();?>/favicon.ico' />
+	<link rel='icon' type='image/png' href='<?php echo get_template_directory_uri();?>/favicon-16x16.png' />
+	<link rel='icon' type='image/png' href='<?php echo get_template_directory_uri();?>/favicon-32x32.png' />
+	<link rel='icon' type='image/png' href='<?php echo get_template_directory_uri();?>/favicon-96x96.png' />
 	<?php wp_head();?>
 </head>
 
