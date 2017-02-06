@@ -15,7 +15,7 @@
 <script>
 document.body.className += ' fade-out ';
 </script>
-<?php ob_start(); ?>
+<?php ob_start();?>
 <?php if( is_front_page() ) {?>
 <div class="home">      
     <div class="hero">
