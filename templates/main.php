@@ -85,7 +85,7 @@
  var $ = jQuery;
 
  var setHeight = function(){
-   $('.hero').height(window.innerHeight - ($('.header').height()));
+   $('.hero').height(window.innerHeight - ($('.header').outerHeight()));
  }
  setHeight()
 
