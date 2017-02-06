@@ -34,7 +34,7 @@
                             echo '<div class="col-xs-12"><div class="contact_success">
                               Jūsų žinūtė išsiųsta. Baldininkas paskambins arba parašys Jums.
                             </div></div>';
-                            wp_mail('','','','');
+                            header("Refresh:0");
                           } else {
                             echo '<div class="col-xs-12"><div class="contact_error">Įvyko klaida, patikrinkite formą.</div></div>';
                           }
