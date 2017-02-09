@@ -37,14 +37,14 @@
                       <td>Lauko baldų komplektas</td>
                       <td class="numeric"> €500 - €1200 </td>
                     </tr>
-                    <tr>
+                    <!--<tr>
                       <td>
                         <p>Baldų surinkimas ir montavimas
                           <span class="smaller">jeigu baldus užsakote pas mus - surinkimas nemokamas</span>
                         </p>
                       </td>
                       <td class="numeric"> €400 - €600 </td>
-                    </tr>
+                    </tr>-->
                   </tbody>
                 </table>
                 <div class="smaller"><span class="red">*</span> Lentelėje pateikiamos apytikslės kainos.</div>
