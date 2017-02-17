@@ -15,7 +15,8 @@
     "gulp-watch": "^4.3.10"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "updates": "git add . && git commit -m 'updates' && git push && git ftp push"
   },
   "repository": {
     "type": "git",

@@ -30,7 +30,7 @@
                 </div>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" >
-                <img src="<?php echo get_template_directory_uri(); ?>/images/kitchen-sketch.png" alt="" class="alignnone x--pv-l" style="width:100%" />
+                <img src="<?php echo get_template_directory_uri();?>/images/kitchen-sketch.png" alt="" class="alignnone x--pv-l" style="width:100%" />
               </div>
             </div>
 
@@ -53,7 +53,7 @@
                         rgba(0,0,0,0.4),
                         rgba(0,0,0,0.5),
                         rgba(0,0,0,0.6),
-                        rgba(0,0,0,0.7)), url('<?php echo the_post_thumbnail_url(); ?>') no-repeat center center/cover;">
+                        rgba(0,0,0,0.7)), url('<?php echo the_post_thumbnail_url();?>') no-repeat center center/cover;">
                           <div class="row start-xs">
                             <div class="col-sm-7 col-xs-12 review_content">
                               <blockquote class="review_quote">
@@ -63,8 +63,7 @@
                                 <?php   $mykey_values = get_post_custom_values( 'client' );
                                         foreach ( $mykey_values as $key => $value ) {
                                           echo "$value"; 
-                                        } 
-                                ?>
+                                        }?>
                               </div>
                             </div>
                           </div>

@@ -29,6 +29,8 @@ $input-border-color: darken($body-color-1, 10%);
 $checkbox-bg: $body-color-1;
 $checkbox-border: darken($checkbox-bg, 4%);
 $checkbox-dot-bg: #3ecf8e;
+$contant-success-border: $checkbox-dot-bg;
+$contact-error-border: $brand-red-color;
 
 
 $table-td-color: darken($body-color-1, 1%);
