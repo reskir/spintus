@@ -5,52 +5,6 @@
             <h3> Dažniausiai užduodami klausimai </h3>
             <dl class="accordion">
 
-              <dt><a href="">Kiek kainuoja pagaminti baldus?</a></dt>
-              <dd class="col-xs-12 col-md-10 col-sm-12 col-lg-8 start-xs">
-                <p>Kainos priklauso nuo projekto sudėtingumo ir papildomų reikalavimų. Kainoms taip pat turi įtakos medžiagos, plotis ir kita.</p>
-                <table class="table">
-                  <colgroup>
-                  <col style="width: 70%" />
-                  <col style="width: 30%" />
-                  
-                  </colgroup>
-                  <thead>
-                    <tr>
-                      <th>
-                        Darbų tipas
-                      </th>
-                      <th class="numeric">
-                        Kaina
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Virtuvės baldų komplektas</td>
-                      <td class="numeric"> €300 - €1200 </td>
-                    </tr>
-                    <tr>
-                      <td>Miegamojo baldų komplektas</td>
-                      <td class="numeric"> €300 - €1200 </td>
-                    </tr>
-                    <tr>
-                      <td>Lauko baldų komplektas</td>
-                      <td class="numeric"> €500 - €1200 </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p>Baldų surinkimas ir montavimas
-                          <span class="smaller">jeigu baldus užsakote pas mus - surinkimas nemokamas</span>
-                        </p>
-                      </td>
-                      <td class="numeric"> €400 - €600 </td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div class="smaller"><span class="red">*</span> Lentelėje pateikiamos apytikslės kainos.</div>
-              
-              </dd>
-
               <dt ><a href="">Kaip mes dirbame?</a></dt>
               <dd class="col-xs-12 start-xs">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/prototype.svg" class="accordion_prototype--desktop" />
@@ -63,12 +17,12 @@
               <dt><a href="">Baldų gaminimo laikas?</a></dt>
               <dd class="col-xs-12 col-md-10 col-sm-12 col-lg-8 start-xs">
                 <p>Baldų pagaminimo laikas gali trūkti nuo 1 iki 2 mėnesių, priklauso nuo sudėtingumo ir apimties.
-                Tam, kad tiksliau įvertinti gaminimo laiką <a href="tel:<?php echo get_option('telephone'); ?>">paskambinkite mums</a> arba užpildykite <a href="<?php echo site_url(); ?>/kontaktai"> formą </a>.</p>
+                Tam, kad tiksliau įvertinti gaminimo laiką <a href="tel:<?php echo get_option('telephone'); ?>">paskambinkite mums</a> arba užpildykite <a href="<?php echo get_permalink( get_page_by_title( 'Kontaktai' ) ) ?>"> formą </a>.</p>
               </dd>
 
               <dt><a href="">Kaip padaryti užsakymą?</a></dt>
               <dd class="col-xs-12 col-md-10 col-sm-12 col-lg-8 start-xs">
-                <a href="tel:<?php echo get_option('telephone'); ?>">Paskambinkite mums</a> arba užpildykite <a href="<?php echo site_url(); ?>/kontaktai"> formą </a> mūsų puslapyje.
+                <a href="tel:<?php echo get_option('telephone'); ?>">Paskambinkite mums</a> arba užpildykite <a href="<?php echo get_permalink( get_page_by_title( 'Kontaktai' ) ) ?>"> formą </a> mūsų puslapyje.
               </dd>
 
 

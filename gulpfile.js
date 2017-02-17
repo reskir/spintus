@@ -19,12 +19,12 @@ gulp.task('sass:watch', function () {
 
 
 gulp.task('images', function(cb) {
-    gulp.src(['src/**/*.png','src/**/*.jpg','src/**/*.gif','src/**/*.jpeg']).pipe(imageop({
+    gulp.src(['src/**/*.png','src/**/*.jpg','src/**/*.gif','src/**/*.jpeg'])
+    .pipe(imageop({
         optimizationLevel: 5,
         progressive: true,
         interlaced: true
     }))
-    .pipe(imagemin([imagemin.jpegtran()]))
     .pipe(image())
     .pipe(gulp.dest('images')).on('end', cb).on('error', cb);
 });
