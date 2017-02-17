@@ -11,8 +11,7 @@
                 <div class="x--ph-l">
                   <h2> Nuo matavimo iki montavimo </h2>
                   <p>
-                    Baldininkas paruoš projektą pagal jūsų poreikius ir gyvenimo būdą, suplanuos erdvė ir pagamins baldus atitinkančius jums.
-
+                    Baldininkas paruoš projektą pagal jūsų poreikius ir gyvenimo būdą, suplanuos erdvę ir pagamins baldus atitinkančius jūsų poreikius.
                   </p>
                 </div>
               </div>
@@ -25,7 +24,7 @@
                 <div class="x--ph-l">
                   <h2> Kokybė ir kruopštumas </h2>
                   <p>
-                    Kiek daug smulkmenų turi įtakos gyvenimo kokybei ir komfortui. Baldai neatsiejamai yra tapatinami su tuo. Mes ne tik įrenginėjam jūsų erdvė, bet ir sukuriam baldus su integruotu apšvietimu, funkcionaliu dizainu iš ilgaamžiškų ir naturalių medžiagų.
+                    Daugybė smulkmenų daro įtaką gyvenimo kokybei ir komfortui. Todėl SPINTUS baldai ne tik užpildys jūsų erdvę, bet pasižymės funkcionaliu dizainu ir ilgaamžiškumu. Kruopščiai apgalvotos detalės, efektyvus apšvietimas, aukštos kokybės furnitūra ir medžiagos - visa tai leis jums atsipalaiduoti ir mėgautis.
                   </p>
                 </div>
               </div>
