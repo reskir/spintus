@@ -25,7 +25,7 @@
                           $clientname = sanitize_text_field($_POST['client_name']);
                           $email = sanitize_email($_POST['email']);
                           $telephone = sanitize_text_field($_POST['tel']);
-                          $subject = 'Spintus.lt užklausa dėl baldų nuo ' . $clientname;
+                          $subject = 'ateitiesbaldai.lt užklausa dėl baldų nuo ' . $clientname;
                           $message = 'Telefono numeris: '.$telephone.'<br /> Žinutė: '.sanitize_text_field($_POST['message']);
                           $headers[] = 'From: ' . $email;
                           $headers[] = 'Cc: ' . $email;
