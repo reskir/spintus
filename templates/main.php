@@ -24,7 +24,7 @@
                 <div class="x--ph-l">
                   <h2> Kokybė ir kruopštumas </h2>
                   <p>
-                    Daugybė smulkmenų daro įtaką gyvenimo kokybei ir komfortui. Todėl SPINTUS baldai ne tik užpildys jūsų erdvę, bet pasižymės funkcionaliu dizainu ir ilgaamžiškumu. Kruopščiai apgalvotos detalės, efektyvus apšvietimas, aukštos kokybės furnitūra ir medžiagos - visa tai leis jums atsipalaiduoti ir mėgautis.
+                    Daugybė smulkmenų daro įtaką gyvenimo kokybei ir komfortui. Todėl ATEITIES BALDAI ne tik užpildys jūsų erdvę, bet pasižymės funkcionaliu dizainu ir ilgaamžiškumu. Kruopščiai apgalvotos detalės, efektyvus apšvietimas, aukštos kokybės furnitūra ir medžiagos - visa tai leis jums atsipalaiduoti ir mėgautis.
                   </p>
                 </div>
               </div>
